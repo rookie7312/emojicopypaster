@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EmojiCopy - Copy &amp; Paste Emojis Instantly</title>
+  <meta name="description" content="Copy and paste emojis instantly! Browse 400+ emojis by category, search, and click to copy. Free emoji tool for messages, social media, and more.">
+  <meta property="og:title" content="EmojiCopy - Copy &amp; Paste Emojis Instantly">
+  <meta property="og:description" content="Copy and paste emojis instantly! Browse 400+ emojis by category, search, and click to copy. Free emoji tool for messages, social media, and more.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="EmojiCopy - Copy &amp; Paste Emojis Instantly">
+  <meta name="twitter:description" content="Copy and paste emojis instantly! Browse 400+ emojis by category, search, and click to copy. Free emoji tool for messages, social media, and more.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+    header { background: #fff; border-bottom: 1px solid #e5e5e5; padding: 12px 0; position: sticky; top: 0; z-index: 50; }
+    header .inner { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .logo { font-family: 'Fredoka', sans-serif; font-size: 1.25rem; font-weight: 600; color: #1a1a1a; }
+    .search-box { flex: 1; min-width: 200px; max-width: 400px; }
+    .search-box input { width: 100%; padding: 8px 12px; border: 1px solid #e5e5e5; border-radius: 6px; font-size: 14px; outline: none; }
+    .search-box input:focus { border-color: #6366f1; }
+    .hero { text-align: center; padding: 40px 16px; background: linear-gradient(135deg, #f0f0ff, #fdf2f8); }
+    .hero h1 { font-family: 'Fredoka', sans-serif; font-size: 2rem; margin-bottom: 8px; }
+    .hero p { color: #666; max-width: 600px; margin: 0 auto; }
+    .categories { display: flex; flex-wrap: wrap; gap: 8px; padding: 16px 0; justify-content: center; }
+    .cat-badge { padding: 6px 14px; border-radius: 20px; background: #f3f4f6; border: 1px solid #e5e5e5; font-size: 13px; cursor: pointer; transition: background 0.2s; }
+    .cat-badge:hover, .cat-badge.active { background: #6366f1; color: #fff; border-color: #6366f1; }
+    .section { padding: 24px 0; }
+    .section h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 16px; }
+    .emoji-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 8px; }
+    .emoji-btn { font-size: 2rem; padding: 8px; border: none; background: #fff; border-radius: 8px; cursor: pointer; text-align: center; transition: transform 0.15s, box-shadow 0.15s; border: 1px solid #f0f0f0; }
+    .emoji-btn:hover { transform: scale(1.1); box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .emoji-btn:active { transform: scale(0.95); }
+    .category-section { margin-bottom: 32px; }
+    .category-section h2 { display: flex; align-items: center; justify-content: space-between; }
+    .category-section h2 a { font-size: 13px; color: #6366f1; font-weight: 500; }
+    .card { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 24px; margin-bottom: 16px; }
+    .emoji-detail { text-align: center; }
+    .emoji-detail .big { font-size: 5rem; margin-bottom: 16px; }
+    .emoji-detail h1 { font-size: 1.5rem; margin-bottom: 8px; }
+    .copy-btn { background: #6366f1; color: #fff; border: none; padding: 10px 24px; border-radius: 6px; font-size: 15px; cursor: pointer; margin: 8px 4px; }
+    .copy-btn:hover { background: #4f46e5; }
+    .breadcrumb { padding: 12px 0; font-size: 13px; color: #888; }
+    .breadcrumb a { color: #6366f1; }
+    .tag { display: inline-block; padding: 4px 10px; background: #f3f4f6; border-radius: 12px; font-size: 12px; margin: 2px; }
+    .seo-content h1, .seo-content h2, .seo-content h3 { margin: 24px 0 12px; }
+    .seo-content h1 { font-size: 1.5rem; }
+    .seo-content h2 { font-size: 1.25rem; }
+    .seo-content h3 { font-size: 1.1rem; }
+    .seo-content p { margin-bottom: 12px; color: #444; }
+    .seo-content li { margin-left: 24px; margin-bottom: 4px; list-style: disc; color: #444; }
+    .seo-content strong { color: #1a1a1a; }
+    .seo-pages-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 8px; }
+    .seo-pages-list a { padding: 10px 14px; background: #fff; border: 1px solid #e5e5e5; border-radius: 6px; font-size: 13px; transition: border-color 0.2s; }
+    .seo-pages-list a:hover { border-color: #6366f1; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; }
+    .related-card { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 12px; text-align: center; }
+    .related-card .emoji { font-size: 1.5rem; }
+    .related-card .name { font-size: 11px; color: #888; margin-top: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    footer { border-top: 1px solid #e5e5e5; padding: 24px 0; text-align: center; color: #888; font-size: 13px; margin-top: 32px; }
+    footer a { color: #6366f1; }
+    .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #1a1a1a; color: #fff; padding: 10px 20px; border-radius: 8px; font-size: 14px; z-index: 999; display: none; }
+    .toast.show { display: block; animation: fadeInOut 1.5s; }
+    @keyframes fadeInOut { 0% { opacity: 0; } 10% { opacity: 1; } 80% { opacity: 1; } 100% { opacity: 0; } }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.5rem; }
+      .emoji-grid { grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); }
+      .emoji-btn { font-size: 1.5rem; padding: 6px; }
+    }
+  </style>
+  <script>
+    function copyEmoji(emoji) {
+      navigator.clipboard.writeText(emoji).then(function() {
+        var t = document.getElementById('toast');
+        t.textContent = emoji + ' Copied!';
+        t.className = 'toast show';
+        setTimeout(function() { t.className = 'toast'; }, 1500);
+      });
+    }
+  </script>
+</head>
+<body>
+  
+    <header>
+    <div class="container inner">
+      <a href="/" class="logo">EmojiCopy</a>
+    </div>
+  </header>
+    <div class="hero">
+      <h1>Copy & Paste Emojis Instantly</h1>
+      <p>Click any emoji to copy it to your clipboard. Browse 400+ emojis organized by category.</p>
+    </div>
+    <div class="container">
+      <div class="categories"><a href="/category/Activities%20%26%20Sports.html" class="cat-badge">Activities &amp; Sports</a>
+<a href="/category/Animals%20%26%20Nature.html" class="cat-badge">Animals &amp; Nature</a>
+<a href="/category/Flags%20%26%20Symbols.html" class="cat-badge">Flags &amp; Symbols</a>
+<a href="/category/Food%20%26%20Drink.html" class="cat-badge">Food &amp; Drink</a>
+<a href="/category/Hand%20Gestures.html" class="cat-badge">Hand Gestures</a>
+<a href="/category/Hearts%20%26%20Love.html" class="cat-badge">Hearts &amp; Love</a>
+<a href="/category/Objects%20%26%20Symbols.html" class="cat-badge">Objects &amp; Symbols</a>
+<a href="/category/People%20%26%20Body.html" class="cat-badge">People &amp; Body</a>
+<a href="/category/Plants%20%26%20Flowers.html" class="cat-badge">Plants &amp; Flowers</a>
+<a href="/category/Smileys%20%26%20Emotion.html" class="cat-badge">Smileys &amp; Emotion</a>
+<a href="/category/Travel%20%26%20Places.html" class="cat-badge">Travel &amp; Places</a>
+<a href="/category/Weather%20%26%20Sky.html" class="cat-badge">Weather &amp; Sky</a></div>
+      
+      <div class="section">
+        <h2>Trending Emojis</h2>
+        <div class="emoji-grid"><button class="emoji-btn" onclick="copyEmoji('😩')" title="Weary Face">😩</button>
+<button class="emoji-btn" onclick="copyEmoji('😄')" title="Grinning Face with Smiling Eyes">😄</button>
+<button class="emoji-btn" onclick="copyEmoji('😐')" title="Neutral Face">😐</button>
+<button class="emoji-btn" onclick="copyEmoji('😆')" title="Grinning Squinting Face">😆</button>
+<button class="emoji-btn" onclick="copyEmoji('😅')" title="Grinning Face with Sweat">😅</button>
+<button class="emoji-btn" onclick="copyEmoji('🤣')" title="Rolling on the Floor Laughing">🤣</button>
+<button class="emoji-btn" onclick="copyEmoji('🤩')" title="Star-Struck">🤩</button>
+<button class="emoji-btn" onclick="copyEmoji('🙂')" title="Slightly Smiling Face">🙂</button>
+<button class="emoji-btn" onclick="copyEmoji('🙃')" title="Upside-Down Face">🙃</button>
+<button class="emoji-btn" onclick="copyEmoji('😉')" title="Winking Face">😉</button>
+<button class="emoji-btn" onclick="copyEmoji('😊')" title="Smiling Face with Smiling Eyes">😊</button>
+<button class="emoji-btn" onclick="copyEmoji('😇')" title="Smiling Face with Halo">😇</button>
+<button class="emoji-btn" onclick="copyEmoji('🥰')" title="Smiling Face with Hearts">🥰</button>
+<button class="emoji-btn" onclick="copyEmoji('😍')" title="Smiling Face with Heart-Eyes">😍</button>
+<button class="emoji-btn" onclick="copyEmoji('😂')" title="Face with Tears of Joy">😂</button>
+<button class="emoji-btn" onclick="copyEmoji('😘')" title="Face Blowing a Kiss">😘</button>
+<button class="emoji-btn" onclick="copyEmoji('😗')" title="Kissing Face">😗</button>
+<button class="emoji-btn" onclick="copyEmoji('😚')" title="Kissing Face with Closed Eyes">😚</button>
+<button class="emoji-btn" onclick="copyEmoji('😋')" title="Face Savoring Food">😋</button>
+<button class="emoji-btn" onclick="copyEmoji('😛')" title="Face with Tongue">😛</button></div>
+      </div>
+
+      <div class="category-section">
+      <h2>Smileys &amp; Emotion <a href="/category/Smileys%20%26%20Emotion.html">View all &rarr;</a></h2>
+      <div class="emoji-grid"><button class="emoji-btn" onclick="copyEmoji('😀')" title="Grinning Face">😀</button>
+<button class="emoji-btn" onclick="copyEmoji('😃')" title="Grinning Face with Big Eyes">😃</button>
+<button class="emoji-btn" onclick="copyEmoji('😄')" title="Grinning Face with Smiling Eyes">😄</button>
+<button class="emoji-btn" onclick="copyEmoji('😁')" title="Beaming Face with Smiling Eyes">😁</button>
+<button class="emoji-btn" onclick="copyEmoji('😆')" title="Grinning Squinting Face">😆</button>
+<button class="emoji-btn" onclick="copyEmoji('😅')" title="Grinning Face with Sweat">😅</button>
+<button class="emoji-btn" onclick="copyEmoji('🤣')" title="Rolling on the Floor Laughing">🤣</button>
+<button class="emoji-btn" onclick="copyEmoji('😂')" title="Face with Tears of Joy">😂</button>
+<button class="emoji-btn" onclick="copyEmoji('🙂')" title="Slightly Smiling Face">🙂</button>
+<button class="emoji-btn" onclick="copyEmoji('🙃')" title="Upside-Down Face">🙃</button>
+<button class="emoji-btn" onclick="copyEmoji('😉')" title="Winking Face">😉</button>
+<button class="emoji-btn" onclick="copyEmoji('😊')" title="Smiling Face with Smiling Eyes">😊</button>
+<button class="emoji-btn" onclick="copyEmoji('😇')" title="Smiling Face with Halo">😇</button>
+<button class="emoji-btn" onclick="copyEmoji('🥰')" title="Smiling Face with Hearts">🥰</button>
+<button class="emoji-btn" onclick="copyEmoji('😍')" title="Smiling Face with Heart-Eyes">😍</button>
+<button class="emoji-btn" onclick="copyEmoji('🤩')" title="Star-Struck">🤩</button>
+<button class="emoji-btn" onclick="copyEmoji('😘')" title="Face Blowing a Kiss">😘</button>
+<button class="emoji-btn" onclick="copyEmoji('😗')" title="Kissing Face">😗</button>
+<button class="emoji-btn" onclick="copyEmoji('😚')" title="Kissing Face with Closed Eyes">😚</button>
+<button class="emoji-btn" onclick="copyEmoji('😋')" title="Face Savoring Food">😋</button>
+<button class="emoji-btn" onclick="copyEmoji('😛')" title="Face with Tongue">😛</button>
+<button class="emoji-btn" onclick="copyEmoji('😜')" title="Winking Face with Tongue">😜</button>
+<button class="emoji-btn" onclick="copyEmoji('🤪')" title="Zany Face">🤪</button>
+<button class="emoji-btn" onclick="copyEmoji('😝')" title="Squinting Face with Tongue">😝</button>
+<button class="emoji-btn" onclick="copyEmoji('🤑')" title="Money-Mouth Face">🤑</button>
+<button class="emoji-btn" onclick="copyEmoji('🤗')" title="Hugging Face">🤗</button>
+<button class="emoji-btn" onclick="copyEmoji('🤭')" title="Face with Hand Over Mouth">🤭</button>
+<button class="emoji-btn" onclick="copyEmoji('🤫')" title="Shushing Face">🤫</button>
+<button class="emoji-btn" onclick="copyEmoji('🤔')" title="Thinking Face">🤔</button>
+<button class="emoji-btn" onclick="copyEmoji('🤐')" title="Zipper-Mouth Face">🤐</button>
+<button class="emoji-btn" onclick="copyEmoji('🤨')" title="Face with Raised Eyebrow">🤨</button>
+<button class="emoji-btn" onclick="copyEmoji('😐')" title="Neutral Face">😐</button>
+<button class="emoji-btn" onclick="copyEmoji('😑')" title="Expressionless Face">😑</button>
+<button class="emoji-btn" onclick="copyEmoji('😶')" title="Face Without Mouth">😶</button>
+<button class="emoji-btn" onclick="copyEmoji('😏')" title="Smirking Face">😏</button>
+<button class="emoji-btn" onclick="copyEmoji('😒')" title="Unamused Face">😒</button>
+<button class="emoji-btn" onclick="copyEmoji('🙄')" title="Face with Rolling Eyes">🙄</button>
+<button class="emoji-btn" onclick="copyEmoji('😬')" title="Grimacing Face">😬</button>
+<button class="emoji-btn" onclick="copyEmoji('🤥')" title="Lying Face">🤥</button>
+<button class="emoji-btn" onclick="copyEmoji('😌')" title="Relieved Face">😌</button></div>
+    </div>
+<div class="category-section">
+      <h2>Hearts &amp; Love <a href="/category/Hearts%20%26%20Love.html">View all &rarr;</a></h2>
+      <div class="emoji-grid"><button class="emoji-btn" onclick="copyEmoji('❤️')" title="Red Heart">❤️</button>
+<button class="emoji-btn" onclick="copyEmoji('🧡')" title="Orange Heart">🧡</button>
+<button class="emoji-btn" onclick="copyEmoji('💛')" title="Yellow Heart">💛</button>
+<button class="emoji-btn" onclick="copyEmoji('💚')" title="Green Heart">💚</button>
+<button class="emoji-btn" onclick="copyEmoji('💙')" title="Blue Heart">💙</button>
+<button class="emoji-btn" onclick="copyEmoji('💜')" title="Purple Heart">💜</button>
+<button class="emoji-btn" onclick="copyEmoji('🖤')" title="Black Heart">🖤</button>
+<button class="emoji-btn" onclick="copyEmoji('🤍')" title="White Heart">🤍</button>
+<button class="emoji-btn" onclick="copyEmoji('🤎')" title="Brown Heart">🤎</button>
+<button class="emoji-btn" onclick="copyEmoji('💕')" title="Two Hearts">💕</button>
+<button class="emoji-btn" onclick="copyEmoji('💞')" title="Revolving Hearts">💞</button>
+<button class="emoji-btn" onclick="copyEmoji('💓')" title="Beating Heart">💓</button>
+<button class="emoji-btn" onclick="copyEmoji('💗')" title="Growing Heart">💗</button>
+<button class="emoji-btn" onclick="copyEmoji('💖')" title="Sparkling Heart">💖</button>
+<button class="emoji-btn" onclick="copyEmoji('💘')" title="Heart with Arrow">💘</button>
+<button class="emoji-btn" onclick="copyEmoji('💝')" title="Heart with Ribbon">💝</button>
+<button class="emoji-btn" onclick="copyEmoji('💟')" title="Heart Decoration">💟</button>
+<button class="emoji-btn" onclick="copyEmoji('❣️')" title="Heart Exclamation">❣️</button>
+<button class="emoji-btn" onclick="copyEmoji('💔')" title="Broken Heart">💔</button>
+<button class="emoji-btn" onclick="copyEmoji('💋')" title="Kiss Mark">💋</button>
+<button class="emoji-btn" onclick="copyEmoji('💑')" title="Couple with Heart">💑</button>
+<button class="emoji-btn" onclick="copyEmoji('💏')" title="Kiss">💏</button>
+<button class="emoji-btn" onclick="copyEmoji('🩷')" title="Pink Heart">🩷</button>
+<button class="emoji-btn" onclick="copyEmoji('🩵')" title="Light Blue Heart">🩵</button>
+<button class="emoji-btn" onclick="copyEmoji('🩶')" title="Grey Heart">🩶</button>
+<button class="emoji-btn" onclick="copyEmoji('❤️‍🔥')" title="Heart on Fire">❤️‍🔥</button>
+<button class="emoji-btn" onclick="copyEmoji('❤️‍🩹')" title="Mending Heart">❤️‍🩹</button></div>
+    </div>
+<div class="category-section">
+      <h2>Hand Gestures <a href="/category/Hand%20Gestures.html">View all &rarr;</a></h2>
+      <div class="emoji-grid"><button class="emoji-btn" onclick="copyEmoji('👋')" title="Waving Hand">👋</button>
+<button class="emoji-btn" onclick="copyEmoji('🤚')" title="Raised Back of Hand">🤚</button>
+<button class="emoji-btn" onclick="copyEmoji('🖐️')" title="Hand with Fingers Splayed">🖐️</button>
+<button class="emoji-btn" onclick="copyEmoji('✋')" title="Raised Hand">✋</button>
+<button class="emoji-btn" onclick="copyEmoji('👌')" title="OK Hand">👌</button>
+<button class="emoji-btn" onclick="copyEmoji('🤌')" title="Pinched Fingers">🤌</button>
+<button class="emoji-btn" onclick="copyEmoji('✌️')" title="Victory Hand">✌️</button>
+<button class="emoji-btn" onclick="copyEmoji('🤞')" title="Crossed Fingers">🤞</button>
+<button class="emoji-btn" onclick="copyEmoji('🤟')" title="Love-You Gesture">🤟</button>
+<button class="emoji-btn" onclick="copyEmoji('🤘')" title="Sign of the Horns">🤘</button>
+<button class="emoji-btn" onclick="copyEmoji('🤙')" title="Call Me Hand">🤙</button>
+<button class="emoji-btn" onclick="copyEmoji('👈')" title="Backhand Index Pointing Left">👈</button>
+<button class="emoji-btn" onclick="copyEmoji('👉')" title="Backhand Index Pointing Right">👉</button>
+<button class="emoji-btn" onclick="copyEmoji('👆')" title="Backhand Index Pointing Up">👆</button>
+<button class="emoji-btn" onclick="copyEmoji('👇')" title="Backhand Index Pointing Down">👇</button>
+<button class="emoji-btn" onclick="copyEmoji('☝️')" title="Index Pointing Up">☝️</button>
+<button class="emoji-btn" onclick="copyEmoji('👍')" title="Thumbs Up">👍</button>
+<button class="emoji-btn" onclick="copyEmoji('👎')" title="Thumbs Down">👎</button>
+<button class="emoji-btn" onclick="copyEmoji('✊')" title="Raised Fist">✊</button>
+<button class="emoji-btn" onclick="copyEmoji('👊')" title="Oncoming Fist">👊</button>
+<button class="emoji-btn" onclick="copyEmoji('🤛')" title="Left-Facing Fist">🤛</button>
+<button class="emoji-btn" onclick="copyEmoji('🤜')" title="Right-Facing Fist">🤜</button>
+<button class="emoji-btn" onclick="copyEmoji('👏')" title="Clapping Hands">👏</button>
+<button class="emoji-btn" onclick="copyEmoji('🙌')" title="Raising Hands">🙌</button>
+<button class="emoji-btn" onclick="copyEmoji('👐')" title="Open Hands">👐</button>
+<button class="emoji-btn" onclick="copyEmoji('🤝')" title="Handshake">🤝</button>
+<button class="emoji-btn" onclick="copyEmoji('🙏')" title="Folded Hands">🙏</button>
+<button class="emoji-btn" onclick="copyEmoji('💪')" title="Flexed Biceps">💪</button>
+<button class="emoji-btn" onclick="copyEmoji('🫶')" title="Heart Hands">🫶</button>
+<button class="emoji-btn" onclick="copyEmoji('🫰')" title="Hand with Index Finger and Thumb Crossed">🫰</button>
+<button class="emoji-btn" onclick="copyEmoji('🫵')" title="Index Pointing at the Viewer">🫵</button>
+<button class="emoji-btn" onclick="copyEmoji('🫱')" title="Rightwards Hand">🫱</button>
+<button class="emoji-btn" onclick="copyEmoji('🫲')" title="Leftwards Hand">🫲</button>
+<button class="emoji-btn" onclick="copyEmoji('✍️')" title="Writing Hand">✍️</button>
+<button class="emoji-btn" onclick="copyEmoji('🤳')" title="Selfie">🤳</button>
+<button class="emoji-btn" onclick="copyEmoji('💅')" title="Nail Polish">💅</button></div>
+    </div>
+<div class="category-section">
+      <h2>People &amp; Body <a href="/category/People%20%26%20Body.html">View all &rarr;</a></h2>
+      <div class="emoji-grid"><button class="emoji-btn" onclick="copyEmoji('🦵')" title="Leg">🦵</button>
+<button class="emoji-btn" onclick="copyEmoji('👶')" title="Baby">👶</button>
+<button class="emoji-btn" onclick="copyEmoji('👦')" title="Boy">👦</button>
+<button class="emoji-btn" onclick="copyEmoji('👧')" title="Girl">👧</button>
+<button class="emoji-btn" onclick="copyEmoji('👨')" title="Man">👨</button>
+<button class="emoji-btn" onclick="copyEmoji('👩')" title="Woman">👩</button>
+<button class="emoji-btn" onclick="copyEmoji('🧑')" title="Person">🧑</button>
+<button class="emoji-btn" onclick="copyEmoji('👴')" title="Old Man">👴</button>
+<button class="emoji-btn" onclick="copyEmoji('👵')" title="Old Woman">👵</button>
+<button class="emoji-btn" onclick="copyEmoji('🧠')" title="Brain">🧠</button>
+<button class="emoji-btn" onclick="copyEmoji('👀')" title="Eyes">👀</button>
+<button class="emoji-btn" onclick="copyEmoji('👁️')" title="Eye">👁️</button>
+<button class="emoji-btn" onclick="copyEmoji('👅')" title="Tongue">👅</button>
+<button class="emoji-btn" onclick="copyEmoji('👄')" title="Mouth">👄</button>
+<button class="emoji-btn" onclick="copyEmoji('🦷')" title="Tooth">🦷</button>
+<button class="emoji-btn" onclick="copyEmoji('🦴')" title="Bone">🦴</button>
+<button class="emoji-btn" onclick="copyEmoji('🦶')" title="Foot">🦶</button>
+<button class="emoji-btn" onclick="copyEmoji('👂')" title="Ear">👂</button>
+<button class="emoji-btn" onclick="copyEmoji('👃')" title="Nose">👃</button>
+<button class="emoji-btn" onclick="copyEmoji('💃')" title="Woman Dancing">💃</button>
+<button class="emoji-btn" onclick="copyEmoji('🕺')" title="Man Dancing">🕺</button>
+<button class="emoji-btn" onclick="copyEmoji('🧘')" title="Person in Lotus Position">🧘</button>
+<button class="emoji-btn" onclick="copyEmoji('🏃')" title="Person Running">🏃</button>
+<button class="emoji-btn" onclick="copyEmoji('🚶')" title="Person Walking">🚶</button></div>
+    </div>
+<div class="category-section">
+      <h2>Animals &amp; Nature <a href="/category/Animals%20%26%20Nature.html">View all &rarr;</a></h2>
+      <div class="emoji-grid"><button class="emoji-btn" onclick="copyEmoji('🐶')" title="Dog Face">🐶</button>
+<button class="emoji-btn" onclick="copyEmoji('🐱')" title="Cat Face">🐱</button>
+<button class="emoji-btn" onclick="copyEmoji('🐭')" title="Mouse Face">🐭</button>
+<button class="emoji-btn" onclick="copyEmoji('🐹')" title="Hamster">🐹</button>
+<button class="emoji-btn" onclick="copyEmoji('🐰')" title="Rabbit Face">🐰</button>
+<button class="emoji-btn" onclick="copyEmoji('🦊')" title="Fox">🦊</button>
+<button class="emoji-btn" onclick="copyEmoji('🐻')" title="Bear">🐻</button>
+<button class="emoji-btn" onclick="copyEmoji('🐼')" title="Panda">🐼</button>
+<button class="emoji-btn" onclick="copyEmoji('🐨')" title="Koala">🐨</button>
+<button class="emoji-btn" onclick="copyEmoji('🐯')" title="Tiger Face">🐯</button>
+<button class="emoji-btn" onclick="copyEmoji('🦁')" title="Lion">🦁</button>
+<button class="emoji-btn" onclick="copyEmoji('🐮')" title="Cow Face">🐮</button>
+<button class="emoji-btn" onclick="copyEmoji('🐷')" title="Pig Face">🐷</button>
+<button class="emoji-btn" onclick="copyEmoji('🐸')" title="Frog">🐸</button>
+<button class="emoji-btn" onclick="copyEmoji('🐵')" title="Monkey Face">🐵</button>
+<button class="emoji-btn" onclick="copyEmoji('🐔')" title="Chicken">🐔</button>
+<button class="emoji-btn" onclick="copyEmoji('🐧')" title="Penguin">🐧</button>
+<button class="emoji-btn" onclick="copyEmoji('🐦')" title="Bird">🐦</button>
+<button class="emoji-btn" onclick="copyEmoji('🦅')" title="Eagle">🦅</button>
+<button class="emoji-btn" onclick="copyEmoji('🦋')" title="Butterfly">🦋</button>
+<button class="emoji-btn" onclick="copyEmoji('🐛')" title="Bug">🐛</button>
+<button class="emoji-btn" onclick="copyEmoji('🐝')" title="Honeybee">🐝</button>
+<button class="emoji-btn" onclick="copyEmoji('🐍')" title="Snake">🐍</button>
+<button class="emoji-btn" onclick="copyEmoji('🐢')" title="Turtle">🐢</button>
+<button class="emoji-btn" onclick="copyEmoji('🐠')" title="Tropical Fish">🐠</button>
+<button class="emoji-btn" onclick="copyEmoji('🐬')" title="Dolphin">🐬</button>
+<button class="emoji-btn" onclick="copyEmoji('🐳')" title="Spouting Whale">🐳</button>
+<button class="emoji-btn" onclick="copyEmoji('🦈')" title="Shark">🦈</button>
+<button class="emoji-btn" onclick="copyEmoji('🐙')" title="Octopus">🐙</button>
+<button class="emoji-btn" onclick="copyEmoji('🦄')" title="Unicorn">🦄</button>
+<button class="emoji-btn" onclick="copyEmoji('🐾')" title="Paw Prints">🐾</button>
+<button class="emoji-btn" onclick="copyEmoji('🕊️')" title="Dove">🕊️</button>
+<button class="emoji-btn" onclick="copyEmoji('🦋')" title="Butterfly Duplicate Removed">🦋</button></div>
+    </div>
+<div class="category-section">
+      <h2>Plants &amp; Flowers <a href="/category/Plants%20%26%20Flowers.html">View all &rarr;</a></h2>
+      <div class="emoji-grid"><button class="emoji-btn" onclick="copyEmoji('🌸')" title="Cherry Blossom">🌸</button>
+<button class="emoji-btn" onclick="copyEmoji('🌹')" title="Rose">🌹</button>
+<button class="emoji-btn" onclick="copyEmoji('🌺')" title="Hibiscus">🌺</button>
+<button class="emoji-btn" onclick="copyEmoji('🌻')" title="Sunflower">🌻</button>
+<button class="emoji-btn" onclick="copyEmoji('🌼')" title="Blossom">🌼</button>
+<button class="emoji-btn" onclick="copyEmoji('🌷')" title="Tulip">🌷</button>
+<button class="emoji-btn" onclick="copyEmoji('🌱')" title="Seedling">🌱</button>
+<button class="emoji-btn" onclick="copyEmoji('🌲')" title="Evergreen Tree">🌲</button>
+<button class="emoji-btn" onclick="copyEmoji('🌳')" title="Deciduous Tree">🌳</button>
+<button class="emoji-btn" onclick="copyEmoji('🌴')" title="Palm Tree">🌴</button>
+<button class="emoji-btn" onclick="copyEmoji('🌵')" title="Cactus">🌵</button>
+<button class="emoji-btn" onclick="copyEmoji('🍀')" title="Four Leaf Clover">🍀</button>
+<button class="emoji-btn" onclick="copyEmoji('🍁')" title="Maple Leaf">🍁</button>
+<button class="emoji-btn" onclick="copyEmoji('🪴')" title="Potted Plant">🪴</button>
+<button class="emoji-btn" onclick="copyEmoji('🍄')" title="Mushroom">🍄</button></div>
+    </div>
+<div class="category-section">
+      <h2>Food &amp; Drink <a href="/category/Food%20%26%20Drink.html">View all &rarr;</a></h2>
+      <div class="emoji-grid"><button class="emoji-btn" onclick="copyEmoji('🍎')" title="Red Apple">🍎</button>
+<button class="emoji-btn" onclick="copyEmoji('🍊')" title="Tangerine">🍊</button>
+<button class="emoji-btn" onclick="copyEmoji('🍋')" title="Lemon">🍋</button>
+<button class="emoji-btn" onclick="copyEmoji('🍌')" title="Banana">🍌</button>
+<button class="emoji-btn" onclick="copyEmoji('🍉')" title="Watermelon">🍉</button>
+<button class="emoji-btn" onclick="copyEmoji('🍇')" title="Grapes">🍇</button>
+<button class="emoji-btn" onclick="copyEmoji('🍓')" title="Strawberry">🍓</button>
+<button class="emoji-btn" onclick="copyEmoji('🍑')" title="Peach">🍑</button>
+<button class="emoji-btn" onclick="copyEmoji('🍒')" title="Cherries">🍒</button>
+<button class="emoji-btn" onclick="copyEmoji('🥑')" title="Avocado">🥑</button>
+<button class="emoji-btn" onclick="copyEmoji('🍔')" title="Hamburger">🍔</button>
+<button class="emoji-btn" onclick="copyEmoji('🍕')" title="Pizza">🍕</button>
+<button class="emoji-btn" onclick="copyEmoji('🌮')" title="Taco">🌮</button>
+<button class="emoji-btn" onclick="copyEmoji('🌯')" title="Burrito">🌯</button>
+<button class="emoji-btn" onclick="copyEmoji('🍜')" title="Steaming Bowl">🍜</button>
+<button class="emoji-btn" onclick="copyEmoji('🍣')" title="Sushi">🍣</button>
+<button class="emoji-btn" onclick="copyEmoji('🍦')" title="Soft Ice Cream">🍦</button>
+<button class="emoji-btn" onclick="copyEmoji('🍩')" title="Doughnut">🍩</button>
+<button class="emoji-btn" onclick="copyEmoji('🍪')" title="Cookie">🍪</button>
+<button class="emoji-btn" onclick="copyEmoji('🎂')" title="Birthday Cake">🎂</button>
+<button class="emoji-btn" onclick="copyEmoji('🍰')" title="Shortcake">🍰</button>
+<button class="emoji-btn" onclick="copyEmoji('☕')" title="Hot Beverage">☕</button>
+<button class="emoji-btn" onclick="copyEmoji('🍺')" title="Beer Mug">🍺</button>
+<button class="emoji-btn" onclick="copyEmoji('🍷')" title="Wine Glass">🍷</button>
+<button class="emoji-btn" onclick="copyEmoji('🍸')" title="Cocktail Glass">🍸</button>
+<button class="emoji-btn" onclick="copyEmoji('🌶️')" title="Hot Pepper">🌶️</button>
+<button class="emoji-btn" onclick="copyEmoji('🍿')" title="Popcorn">🍿</button>
+<button class="emoji-btn" onclick="copyEmoji('🧁')" title="Cupcake">🧁</button>
+<button class="emoji-btn" onclick="copyEmoji('🍭')" title="Lollipop">🍭</button>
+<button class="emoji-btn" onclick="copyEmoji('🍬')" title="Candy">🍬</button>
+<button class="emoji-btn" onclick="copyEmoji('🧊')" title="Ice">🧊</button></div>
+    </div>
+<div class="category-section">
+      <h2>Activities &amp; Sports <a href="/category/Activities%20%26%20Sports.html">View all &rarr;</a></h2>
+      <div class="emoji-grid"><button class="emoji-btn" onclick="copyEmoji('⚽')" title="Soccer Ball">⚽</button>
+<button class="emoji-btn" onclick="copyEmoji('🏀')" title="Basketball">🏀</button>
+<button class="emoji-btn" onclick="copyEmoji('🏈')" title="American Football">🏈</button>
+<button class="emoji-btn" onclick="copyEmoji('⚾')" title="Baseball">⚾</button>
+<button class="emoji-btn" onclick="copyEmoji('🎾')" title="Tennis">🎾</button>
+<button class="emoji-btn" onclick="copyEmoji('🏐')" title="Volleyball">🏐</button>
+<button class="emoji-btn" onclick="copyEmoji('🏆')" title="Trophy">🏆</button>
+<button class="emoji-btn" onclick="copyEmoji('🥇')" title="1st Place Medal">🥇</button>
+<button class="emoji-btn" onclick="copyEmoji('🥈')" title="2nd Place Medal">🥈</button>
+<button class="emoji-btn" onclick="copyEmoji('🥉')" title="3rd Place Medal">🥉</button>
+<button class="emoji-btn" onclick="copyEmoji('🎮')" title="Video Game">🎮</button>
+<button class="emoji-btn" onclick="copyEmoji('🎯')" title="Bullseye">🎯</button>
+<button class="emoji-btn" onclick="copyEmoji('🎲')" title="Game Die">🎲</button>
+<button class="emoji-btn" onclick="copyEmoji('🎨')" title="Artist Palette">🎨</button>
+<button class="emoji-btn" onclick="copyEmoji('🎭')" title="Performing Arts">🎭</button>
+<button class="emoji-btn" onclick="copyEmoji('🎸')" title="Guitar">🎸</button>
+<button class="emoji-btn" onclick="copyEmoji('🎹')" title="Musical Keyboard">🎹</button>
+<button class="emoji-btn" onclick="copyEmoji('🎺')" title="Trumpet">🎺</button>
+<button class="emoji-btn" onclick="copyEmoji('🥁')" title="Drum">🥁</button>
+<button class="emoji-btn" onclick="copyEmoji('🏋️')" title="Person Lifting Weights">🏋️</button>
+<button class="emoji-btn" onclick="copyEmoji('🤸')" title="Person Cartwheeling">🤸</button>
+<button class="emoji-btn" onclick="copyEmoji('🏊')" title="Person Swimming">🏊</button>
+<button class="emoji-btn" onclick="copyEmoji('🚴')" title="Person Biking">🚴</button></div>
+    </div>
+<div class="category-section">
+      <h2>Travel &amp; Places <a href="/category/Travel%20%26%20Places.html">View all &rarr;</a></h2>
+      <div class="emoji-grid"><button class="emoji-btn" onclick="copyEmoji('🚗')" title="Automobile">🚗</button>
+<button class="emoji-btn" onclick="copyEmoji('🚕')" title="Taxi">🚕</button>
+<button class="emoji-btn" onclick="copyEmoji('🚀')" title="Rocket">🚀</button>
+<button class="emoji-btn" onclick="copyEmoji('✈️')" title="Airplane">✈️</button>
+<button class="emoji-btn" onclick="copyEmoji('🏠')" title="House">🏠</button>
+<button class="emoji-btn" onclick="copyEmoji('🏢')" title="Office Building">🏢</button>
+<button class="emoji-btn" onclick="copyEmoji('🏖️')" title="Beach with Umbrella">🏖️</button>
+<button class="emoji-btn" onclick="copyEmoji('🌍')" title="Globe Showing Europe-Africa">🌍</button>
+<button class="emoji-btn" onclick="copyEmoji('🗽')" title="Statue of Liberty">🗽</button></div>
+    </div>
+<div class="category-section">
+      <h2>Weather &amp; Sky <a href="/category/Weather%20%26%20Sky.html">View all &rarr;</a></h2>
+      <div class="emoji-grid"><button class="emoji-btn" onclick="copyEmoji('☀️')" title="Sun">☀️</button>
+<button class="emoji-btn" onclick="copyEmoji('🌙')" title="Crescent Moon">🌙</button>
+<button class="emoji-btn" onclick="copyEmoji('⭐')" title="Star">⭐</button>
+<button class="emoji-btn" onclick="copyEmoji('🌟')" title="Glowing Star">🌟</button>
+<button class="emoji-btn" onclick="copyEmoji('✨')" title="Sparkles">✨</button>
+<button class="emoji-btn" onclick="copyEmoji('🌈')" title="Rainbow">🌈</button>
+<button class="emoji-btn" onclick="copyEmoji('🔥')" title="Fire">🔥</button>
+<button class="emoji-btn" onclick="copyEmoji('💧')" title="Droplet">💧</button>
+<button class="emoji-btn" onclick="copyEmoji('❄️')" title="Snowflake">❄️</button>
+<button class="emoji-btn" onclick="copyEmoji('⚡')" title="High Voltage">⚡</button>
+<button class="emoji-btn" onclick="copyEmoji('🌊')" title="Water Wave">🌊</button>
+<button class="emoji-btn" onclick="copyEmoji('🌤️')" title="Sun Behind Small Cloud">🌤️</button>
+<button class="emoji-btn" onclick="copyEmoji('⛈️')" title="Cloud with Lightning and Rain">⛈️</button>
+<button class="emoji-btn" onclick="copyEmoji('🌪️')" title="Tornado">🌪️</button>
+<button class="emoji-btn" onclick="copyEmoji('🌫️')" title="Fog">🌫️</button>
+<button class="emoji-btn" onclick="copyEmoji('☁️')" title="Cloud">☁️</button>
+<button class="emoji-btn" onclick="copyEmoji('🌕')" title="Full Moon">🌕</button>
+<button class="emoji-btn" onclick="copyEmoji('🌑')" title="New Moon">🌑</button></div>
+    </div>
+<div class="category-section">
+      <h2>Objects &amp; Symbols <a href="/category/Objects%20%26%20Symbols.html">View all &rarr;</a></h2>
+      <div class="emoji-grid"><button class="emoji-btn" onclick="copyEmoji('💯')" title="Hundred Points">💯</button>
+<button class="emoji-btn" onclick="copyEmoji('💰')" title="Money Bag">💰</button>
+<button class="emoji-btn" onclick="copyEmoji('💎')" title="Gem Stone">💎</button>
+<button class="emoji-btn" onclick="copyEmoji('🎵')" title="Musical Note">🎵</button>
+<button class="emoji-btn" onclick="copyEmoji('🎶')" title="Musical Notes">🎶</button>
+<button class="emoji-btn" onclick="copyEmoji('🔔')" title="Bell">🔔</button>
+<button class="emoji-btn" onclick="copyEmoji('📱')" title="Mobile Phone">📱</button>
+<button class="emoji-btn" onclick="copyEmoji('💻')" title="Laptop">💻</button>
+<button class="emoji-btn" onclick="copyEmoji('📷')" title="Camera">📷</button>
+<button class="emoji-btn" onclick="copyEmoji('🎁')" title="Wrapped Gift">🎁</button>
+<button class="emoji-btn" onclick="copyEmoji('🎀')" title="Ribbon">🎀</button>
+<button class="emoji-btn" onclick="copyEmoji('🎉')" title="Party Popper">🎉</button>
+<button class="emoji-btn" onclick="copyEmoji('🎊')" title="Confetti Ball">🎊</button>
+<button class="emoji-btn" onclick="copyEmoji('🎈')" title="Balloon">🎈</button>
+<button class="emoji-btn" onclick="copyEmoji('🎃')" title="Jack-O-Lantern">🎃</button>
+<button class="emoji-btn" onclick="copyEmoji('🎄')" title="Christmas Tree">🎄</button>
+<button class="emoji-btn" onclick="copyEmoji('🎅')" title="Santa Claus">🎅</button>
+<button class="emoji-btn" onclick="copyEmoji('📝')" title="Memo">📝</button>
+<button class="emoji-btn" onclick="copyEmoji('📌')" title="Pushpin">📌</button>
+<button class="emoji-btn" onclick="copyEmoji('🔑')" title="Key">🔑</button>
+<button class="emoji-btn" onclick="copyEmoji('🔒')" title="Locked">🔒</button>
+<button class="emoji-btn" onclick="copyEmoji('⏰')" title="Alarm Clock">⏰</button>
+<button class="emoji-btn" onclick="copyEmoji('⌛')" title="Hourglass Done">⌛</button>
+<button class="emoji-btn" onclick="copyEmoji('⏳')" title="Hourglass Not Done">⏳</button>
+<button class="emoji-btn" onclick="copyEmoji('🫧')" title="Bubbles">🫧</button>
+<button class="emoji-btn" onclick="copyEmoji('🪄')" title="Magic Wand">🪄</button>
+<button class="emoji-btn" onclick="copyEmoji('🔮')" title="Crystal Ball">🔮</button>
+<button class="emoji-btn" onclick="copyEmoji('🧿')" title="Nazar Amulet">🧿</button>
+<button class="emoji-btn" onclick="copyEmoji('🪬')" title="Hamsa">🪬</button>
+<button class="emoji-btn" onclick="copyEmoji('💡')" title="Light Bulb">💡</button>
+<button class="emoji-btn" onclick="copyEmoji('📚')" title="Books">📚</button>
+<button class="emoji-btn" onclick="copyEmoji('✏️')" title="Pencil">✏️</button>
+<button class="emoji-btn" onclick="copyEmoji('🖊️')" title="Pen">🖊️</button>
+<button class="emoji-btn" onclick="copyEmoji('🎤')" title="Microphone">🎤</button>
+<button class="emoji-btn" onclick="copyEmoji('🎧')" title="Headphone">🎧</button>
+<button class="emoji-btn" onclick="copyEmoji('🎬')" title="Clapper Board">🎬</button>
+<button class="emoji-btn" onclick="copyEmoji('📺')" title="Television">📺</button>
+<button class="emoji-btn" onclick="copyEmoji('🔗')" title="Link">🔗</button>
+<button class="emoji-btn" onclick="copyEmoji('🔧')" title="Wrench">🔧</button>
+<button class="emoji-btn" onclick="copyEmoji('⚙️')" title="Gear">⚙️</button></div>
+    </div>
+<div class="category-section">
+      <h2>Flags &amp; Symbols <a href="/category/Flags%20%26%20Symbols.html">View all &rarr;</a></h2>
+      <div class="emoji-grid"><button class="emoji-btn" onclick="copyEmoji('🏁')" title="Chequered Flag">🏁</button>
+<button class="emoji-btn" onclick="copyEmoji('🚩')" title="Triangular Flag">🚩</button>
+<button class="emoji-btn" onclick="copyEmoji('🏳️‍🌈')" title="Rainbow Flag">🏳️‍🌈</button>
+<button class="emoji-btn" onclick="copyEmoji('✅')" title="Check Mark Button">✅</button>
+<button class="emoji-btn" onclick="copyEmoji('❌')" title="Cross Mark">❌</button>
+<button class="emoji-btn" onclick="copyEmoji('❓')" title="Question Mark">❓</button>
+<button class="emoji-btn" onclick="copyEmoji('❗')" title="Exclamation Mark">❗</button>
+<button class="emoji-btn" onclick="copyEmoji('💤')" title="Zzz">💤</button>
+<button class="emoji-btn" onclick="copyEmoji('♻️')" title="Recycling Symbol">♻️</button>
+<button class="emoji-btn" onclick="copyEmoji('⚠️')" title="Warning">⚠️</button>
+<button class="emoji-btn" onclick="copyEmoji('🔴')" title="Red Circle">🔴</button>
+<button class="emoji-btn" onclick="copyEmoji('🔵')" title="Blue Circle">🔵</button>
+<button class="emoji-btn" onclick="copyEmoji('⬛')" title="Black Large Square">⬛</button>
+<button class="emoji-btn" onclick="copyEmoji('⬜')" title="White Large Square">⬜</button>
+<button class="emoji-btn" onclick="copyEmoji('♈')" title="Aries">♈</button>
+<button class="emoji-btn" onclick="copyEmoji('♉')" title="Taurus">♉</button>
+<button class="emoji-btn" onclick="copyEmoji('♊')" title="Gemini">♊</button>
+<button class="emoji-btn" onclick="copyEmoji('♋')" title="Cancer">♋</button>
+<button class="emoji-btn" onclick="copyEmoji('♌')" title="Leo">♌</button>
+<button class="emoji-btn" onclick="copyEmoji('♍')" title="Virgo">♍</button>
+<button class="emoji-btn" onclick="copyEmoji('♎')" title="Libra">♎</button>
+<button class="emoji-btn" onclick="copyEmoji('♏')" title="Scorpio">♏</button>
+<button class="emoji-btn" onclick="copyEmoji('♐')" title="Sagittarius">♐</button>
+<button class="emoji-btn" onclick="copyEmoji('♑')" title="Capricorn">♑</button>
+<button class="emoji-btn" onclick="copyEmoji('♒')" title="Aquarius">♒</button>
+<button class="emoji-btn" onclick="copyEmoji('♓')" title="Pisces">♓</button>
+<button class="emoji-btn" onclick="copyEmoji('➡️')" title="Right Arrow">➡️</button>
+<button class="emoji-btn" onclick="copyEmoji('⬅️')" title="Left Arrow">⬅️</button>
+<button class="emoji-btn" onclick="copyEmoji('⬆️')" title="Up Arrow">⬆️</button>
+<button class="emoji-btn" onclick="copyEmoji('⬇️')" title="Down Arrow">⬇️</button>
+<button class="emoji-btn" onclick="copyEmoji('↩️')" title="Right Arrow Curving Left">↩️</button>
+<button class="emoji-btn" onclick="copyEmoji('🔄')" title="Counterclockwise Arrows Button">🔄</button>
+<button class="emoji-btn" onclick="copyEmoji('🔃')" title="Clockwise Vertical Arrows">🔃</button>
+<button class="emoji-btn" onclick="copyEmoji('➕')" title="Plus">➕</button>
+<button class="emoji-btn" onclick="copyEmoji('➖')" title="Minus">➖</button>
+<button class="emoji-btn" onclick="copyEmoji('✖️')" title="Multiply">✖️</button>
+<button class="emoji-btn" onclick="copyEmoji('➗')" title="Divide">➗</button>
+<button class="emoji-btn" onclick="copyEmoji('♾️')" title="Infinity">♾️</button></div>
+    </div>
+
+      
+    </div>
+    <footer>
+    <div class="container">
+      <p><a href="/">EmojiCopy</a> - Copy & Paste Emojis Instantly</p>
+      
+    </div>
+  </footer>
+  <div id="toast" class="toast"></div>
+</body>
+</html>

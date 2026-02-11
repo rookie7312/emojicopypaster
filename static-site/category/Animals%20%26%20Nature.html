@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animals &amp; Nature Emojis - Copy &amp; Paste | EmojiCopy</title>
+  <meta name="description" content="Browse and copy Animals &amp; Nature emojis. Click to copy any emoji to your clipboard instantly. Free emoji copy and paste tool.">
+  <meta property="og:title" content="Animals &amp; Nature Emojis - Copy &amp; Paste | EmojiCopy">
+  <meta property="og:description" content="Browse and copy Animals &amp; Nature emojis. Click to copy any emoji to your clipboard instantly. Free emoji copy and paste tool.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Animals &amp; Nature Emojis - Copy &amp; Paste | EmojiCopy">
+  <meta name="twitter:description" content="Browse and copy Animals &amp; Nature emojis. Click to copy any emoji to your clipboard instantly. Free emoji copy and paste tool.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+    header { background: #fff; border-bottom: 1px solid #e5e5e5; padding: 12px 0; position: sticky; top: 0; z-index: 50; }
+    header .inner { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .logo { font-family: 'Fredoka', sans-serif; font-size: 1.25rem; font-weight: 600; color: #1a1a1a; }
+    .search-box { flex: 1; min-width: 200px; max-width: 400px; }
+    .search-box input { width: 100%; padding: 8px 12px; border: 1px solid #e5e5e5; border-radius: 6px; font-size: 14px; outline: none; }
+    .search-box input:focus { border-color: #6366f1; }
+    .hero { text-align: center; padding: 40px 16px; background: linear-gradient(135deg, #f0f0ff, #fdf2f8); }
+    .hero h1 { font-family: 'Fredoka', sans-serif; font-size: 2rem; margin-bottom: 8px; }
+    .hero p { color: #666; max-width: 600px; margin: 0 auto; }
+    .categories { display: flex; flex-wrap: wrap; gap: 8px; padding: 16px 0; justify-content: center; }
+    .cat-badge { padding: 6px 14px; border-radius: 20px; background: #f3f4f6; border: 1px solid #e5e5e5; font-size: 13px; cursor: pointer; transition: background 0.2s; }
+    .cat-badge:hover, .cat-badge.active { background: #6366f1; color: #fff; border-color: #6366f1; }
+    .section { padding: 24px 0; }
+    .section h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 16px; }
+    .emoji-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 8px; }
+    .emoji-btn { font-size: 2rem; padding: 8px; border: none; background: #fff; border-radius: 8px; cursor: pointer; text-align: center; transition: transform 0.15s, box-shadow 0.15s; border: 1px solid #f0f0f0; }
+    .emoji-btn:hover { transform: scale(1.1); box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .emoji-btn:active { transform: scale(0.95); }
+    .category-section { margin-bottom: 32px; }
+    .category-section h2 { display: flex; align-items: center; justify-content: space-between; }
+    .category-section h2 a { font-size: 13px; color: #6366f1; font-weight: 500; }
+    .card { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 24px; margin-bottom: 16px; }
+    .emoji-detail { text-align: center; }
+    .emoji-detail .big { font-size: 5rem; margin-bottom: 16px; }
+    .emoji-detail h1 { font-size: 1.5rem; margin-bottom: 8px; }
+    .copy-btn { background: #6366f1; color: #fff; border: none; padding: 10px 24px; border-radius: 6px; font-size: 15px; cursor: pointer; margin: 8px 4px; }
+    .copy-btn:hover { background: #4f46e5; }
+    .breadcrumb { padding: 12px 0; font-size: 13px; color: #888; }
+    .breadcrumb a { color: #6366f1; }
+    .tag { display: inline-block; padding: 4px 10px; background: #f3f4f6; border-radius: 12px; font-size: 12px; margin: 2px; }
+    .seo-content h1, .seo-content h2, .seo-content h3 { margin: 24px 0 12px; }
+    .seo-content h1 { font-size: 1.5rem; }
+    .seo-content h2 { font-size: 1.25rem; }
+    .seo-content h3 { font-size: 1.1rem; }
+    .seo-content p { margin-bottom: 12px; color: #444; }
+    .seo-content li { margin-left: 24px; margin-bottom: 4px; list-style: disc; color: #444; }
+    .seo-content strong { color: #1a1a1a; }
+    .seo-pages-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 8px; }
+    .seo-pages-list a { padding: 10px 14px; background: #fff; border: 1px solid #e5e5e5; border-radius: 6px; font-size: 13px; transition: border-color 0.2s; }
+    .seo-pages-list a:hover { border-color: #6366f1; }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; }
+    .related-card { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 12px; text-align: center; }
+    .related-card .emoji { font-size: 1.5rem; }
+    .related-card .name { font-size: 11px; color: #888; margin-top: 4px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    footer { border-top: 1px solid #e5e5e5; padding: 24px 0; text-align: center; color: #888; font-size: 13px; margin-top: 32px; }
+    footer a { color: #6366f1; }
+    .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #1a1a1a; color: #fff; padding: 10px 20px; border-radius: 8px; font-size: 14px; z-index: 999; display: none; }
+    .toast.show { display: block; animation: fadeInOut 1.5s; }
+    @keyframes fadeInOut { 0% { opacity: 0; } 10% { opacity: 1; } 80% { opacity: 1; } 100% { opacity: 0; } }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 1.5rem; }
+      .emoji-grid { grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); }
+      .emoji-btn { font-size: 1.5rem; padding: 6px; }
+    }
+  </style>
+  <script>
+    function copyEmoji(emoji) {
+      navigator.clipboard.writeText(emoji).then(function() {
+        var t = document.getElementById('toast');
+        t.textContent = emoji + ' Copied!';
+        t.className = 'toast show';
+        setTimeout(function() { t.className = 'toast'; }, 1500);
+      });
+    }
+  </script>
+</head>
+<body>
+  
+      <header>
+    <div class="container inner">
+      <a href="/" class="logo">EmojiCopy</a>
+    </div>
+  </header>
+      <div class="container">
+        <div class="breadcrumb"><a href="/">Home</a> &rsaquo; Animals &amp; Nature</div>
+        <h1>Animals &amp; Nature Emojis - Copy & Paste</h1>
+        <p style="color:#666;margin-bottom:24px">Browse and copy Animals &amp; Nature emojis. Click any emoji to copy it to your clipboard instantly.</p>
+        <div class="emoji-grid" style="margin-bottom:32px"><button class="emoji-btn" onclick="copyEmoji('🐶')" title="Dog Face">🐶</button>
+<button class="emoji-btn" onclick="copyEmoji('🐱')" title="Cat Face">🐱</button>
+<button class="emoji-btn" onclick="copyEmoji('🐭')" title="Mouse Face">🐭</button>
+<button class="emoji-btn" onclick="copyEmoji('🐹')" title="Hamster">🐹</button>
+<button class="emoji-btn" onclick="copyEmoji('🐰')" title="Rabbit Face">🐰</button>
+<button class="emoji-btn" onclick="copyEmoji('🦊')" title="Fox">🦊</button>
+<button class="emoji-btn" onclick="copyEmoji('🐻')" title="Bear">🐻</button>
+<button class="emoji-btn" onclick="copyEmoji('🐼')" title="Panda">🐼</button>
+<button class="emoji-btn" onclick="copyEmoji('🐨')" title="Koala">🐨</button>
+<button class="emoji-btn" onclick="copyEmoji('🐯')" title="Tiger Face">🐯</button>
+<button class="emoji-btn" onclick="copyEmoji('🦁')" title="Lion">🦁</button>
+<button class="emoji-btn" onclick="copyEmoji('🐮')" title="Cow Face">🐮</button>
+<button class="emoji-btn" onclick="copyEmoji('🐷')" title="Pig Face">🐷</button>
+<button class="emoji-btn" onclick="copyEmoji('🐸')" title="Frog">🐸</button>
+<button class="emoji-btn" onclick="copyEmoji('🐵')" title="Monkey Face">🐵</button>
+<button class="emoji-btn" onclick="copyEmoji('🐔')" title="Chicken">🐔</button>
+<button class="emoji-btn" onclick="copyEmoji('🐧')" title="Penguin">🐧</button>
+<button class="emoji-btn" onclick="copyEmoji('🐦')" title="Bird">🐦</button>
+<button class="emoji-btn" onclick="copyEmoji('🦅')" title="Eagle">🦅</button>
+<button class="emoji-btn" onclick="copyEmoji('🦋')" title="Butterfly">🦋</button>
+<button class="emoji-btn" onclick="copyEmoji('🐛')" title="Bug">🐛</button>
+<button class="emoji-btn" onclick="copyEmoji('🐝')" title="Honeybee">🐝</button>
+<button class="emoji-btn" onclick="copyEmoji('🐍')" title="Snake">🐍</button>
+<button class="emoji-btn" onclick="copyEmoji('🐢')" title="Turtle">🐢</button>
+<button class="emoji-btn" onclick="copyEmoji('🐠')" title="Tropical Fish">🐠</button>
+<button class="emoji-btn" onclick="copyEmoji('🐬')" title="Dolphin">🐬</button>
+<button class="emoji-btn" onclick="copyEmoji('🐳')" title="Spouting Whale">🐳</button>
+<button class="emoji-btn" onclick="copyEmoji('🦈')" title="Shark">🦈</button>
+<button class="emoji-btn" onclick="copyEmoji('🐙')" title="Octopus">🐙</button>
+<button class="emoji-btn" onclick="copyEmoji('🦄')" title="Unicorn">🦄</button>
+<button class="emoji-btn" onclick="copyEmoji('🐾')" title="Paw Prints">🐾</button>
+<button class="emoji-btn" onclick="copyEmoji('🕊️')" title="Dove">🕊️</button>
+<button class="emoji-btn" onclick="copyEmoji('🦋')" title="Butterfly Duplicate Removed">🦋</button></div>
+        <h2>All Animals &amp; Nature Emojis</h2>
+        <div class="related-grid" style="margin-bottom:32px"><a href="/emoji/dog-face.html" class="related-card"><div class="emoji">🐶</div><div class="name">Dog Face</div></a>
+<a href="/emoji/cat-face.html" class="related-card"><div class="emoji">🐱</div><div class="name">Cat Face</div></a>
+<a href="/emoji/mouse-face.html" class="related-card"><div class="emoji">🐭</div><div class="name">Mouse Face</div></a>
+<a href="/emoji/hamster.html" class="related-card"><div class="emoji">🐹</div><div class="name">Hamster</div></a>
+<a href="/emoji/rabbit-face.html" class="related-card"><div class="emoji">🐰</div><div class="name">Rabbit Face</div></a>
+<a href="/emoji/fox.html" class="related-card"><div class="emoji">🦊</div><div class="name">Fox</div></a>
+<a href="/emoji/bear.html" class="related-card"><div class="emoji">🐻</div><div class="name">Bear</div></a>
+<a href="/emoji/panda.html" class="related-card"><div class="emoji">🐼</div><div class="name">Panda</div></a>
+<a href="/emoji/koala.html" class="related-card"><div class="emoji">🐨</div><div class="name">Koala</div></a>
+<a href="/emoji/tiger-face.html" class="related-card"><div class="emoji">🐯</div><div class="name">Tiger Face</div></a>
+<a href="/emoji/lion.html" class="related-card"><div class="emoji">🦁</div><div class="name">Lion</div></a>
+<a href="/emoji/cow-face.html" class="related-card"><div class="emoji">🐮</div><div class="name">Cow Face</div></a>
+<a href="/emoji/pig-face.html" class="related-card"><div class="emoji">🐷</div><div class="name">Pig Face</div></a>
+<a href="/emoji/frog.html" class="related-card"><div class="emoji">🐸</div><div class="name">Frog</div></a>
+<a href="/emoji/monkey-face.html" class="related-card"><div class="emoji">🐵</div><div class="name">Monkey Face</div></a>
+<a href="/emoji/chicken.html" class="related-card"><div class="emoji">🐔</div><div class="name">Chicken</div></a>
+<a href="/emoji/penguin.html" class="related-card"><div class="emoji">🐧</div><div class="name">Penguin</div></a>
+<a href="/emoji/bird.html" class="related-card"><div class="emoji">🐦</div><div class="name">Bird</div></a>
+<a href="/emoji/eagle.html" class="related-card"><div class="emoji">🦅</div><div class="name">Eagle</div></a>
+<a href="/emoji/butterfly.html" class="related-card"><div class="emoji">🦋</div><div class="name">Butterfly</div></a>
+<a href="/emoji/bug.html" class="related-card"><div class="emoji">🐛</div><div class="name">Bug</div></a>
+<a href="/emoji/honeybee.html" class="related-card"><div class="emoji">🐝</div><div class="name">Honeybee</div></a>
+<a href="/emoji/snake.html" class="related-card"><div class="emoji">🐍</div><div class="name">Snake</div></a>
+<a href="/emoji/turtle.html" class="related-card"><div class="emoji">🐢</div><div class="name">Turtle</div></a>
+<a href="/emoji/tropical-fish.html" class="related-card"><div class="emoji">🐠</div><div class="name">Tropical Fish</div></a>
+<a href="/emoji/dolphin.html" class="related-card"><div class="emoji">🐬</div><div class="name">Dolphin</div></a>
+<a href="/emoji/spouting-whale.html" class="related-card"><div class="emoji">🐳</div><div class="name">Spouting Whale</div></a>
+<a href="/emoji/shark.html" class="related-card"><div class="emoji">🦈</div><div class="name">Shark</div></a>
+<a href="/emoji/octopus.html" class="related-card"><div class="emoji">🐙</div><div class="name">Octopus</div></a>
+<a href="/emoji/unicorn.html" class="related-card"><div class="emoji">🦄</div><div class="name">Unicorn</div></a></div>
+      </div>
+      <footer>
+    <div class="container">
+      <p><a href="/">EmojiCopy</a> - Copy & Paste Emojis Instantly</p>
+      
+    </div>
+  </footer>
+  <div id="toast" class="toast"></div>
+</body>
+</html>
