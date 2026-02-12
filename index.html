@@ -1,0 +1,2250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<title>EmojiCopyPaster - Copy &amp; Paste Emojis Instantly</title>
+<meta name="description" content="Copy and paste emojis instantly! Browse 400+ emojis by category, search, and click to copy. Free emoji tool for messages, social media, and more." />
+<link rel="canonical" href="https://emojicopypaster.com/" />
+<meta property="og:title" content="EmojiCopyPaster - Copy &amp; Paste Emojis Instantly" />
+<meta property="og:description" content="Copy and paste emojis instantly! Browse 400+ emojis by category, search, and click to copy. Free emoji tool for messages, social media, and more." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://emojicopypaster.com/" />
+<meta property="og:site_name" content="EmojiCopyPaster" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="EmojiCopyPaster - Copy &amp; Paste Emojis Instantly" />
+<meta name="twitter:description" content="Copy and paste emojis instantly! Browse 400+ emojis by category, search, and click to copy. Free emoji tool for messages, social media, and more." />
+<meta name="theme-color" content="#8B5CF6" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:{DEFAULT:'#8B5CF6',foreground:'#ffffff'},accent:'#14B8A6',muted:{DEFAULT:'#f3f4f6',foreground:'#6b7280'},border:'#e5e7eb',background:'#ffffff',foreground:'#111827',card:'#ffffff'}}}}</script>
+
+<style>
+body{font-family:'Inter',sans-serif;color:#111827;background:#fff}
+.toast{position:fixed;bottom:20px;right:20px;background:#8B5CF6;color:#fff;padding:10px 20px;border-radius:8px;font-size:14px;z-index:999;opacity:0;transition:opacity 0.3s}
+.toast.show{opacity:1}
+a{text-decoration:none;color:inherit}
+</style>
+</head>
+<body class="min-h-screen bg-white">
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+<div class="max-w-6xl mx-auto px-4 py-3 flex items-center gap-4 flex-wrap">
+<a href="/"><h1 class="text-xl font-bold whitespace-nowrap">EmojiCopyPaster</h1></a>
+</div>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 py-6">
+<section class="mb-8">
+<div class="text-center mb-6 py-10 rounded-lg" style="background:linear-gradient(135deg,rgba(139,92,246,0.12),rgba(236,72,153,0.12),rgba(20,184,166,0.08))">
+<h2 class="text-3xl md:text-4xl font-bold mb-2">Copy & Paste Emojis Instantly</h2>
+<p class="text-gray-500 text-lg max-w-2xl mx-auto">Click any emoji to copy it to your clipboard. Works everywhere — messages, social media, emails, and more.</p>
+</div>
+<div class="flex flex-wrap gap-2 mb-6"><a href="/category/smileys-emotion.html" class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">Smileys &amp; Emotion</a>
+<a href="/category/hearts-love.html" class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">Hearts &amp; Love</a>
+<a href="/category/hand-gestures.html" class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">Hand Gestures</a>
+<a href="/category/people-body.html" class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">People &amp; Body</a>
+<a href="/category/animals-nature.html" class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">Animals &amp; Nature</a>
+<a href="/category/plants-flowers.html" class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">Plants &amp; Flowers</a>
+<a href="/category/food-drink.html" class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">Food &amp; Drink</a>
+<a href="/category/activities-sports.html" class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">Activities &amp; Sports</a>
+<a href="/category/travel-places.html" class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">Travel &amp; Places</a>
+<a href="/category/weather-sky.html" class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">Weather &amp; Sky</a>
+<a href="/category/objects-symbols.html" class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">Objects &amp; Symbols</a>
+<a href="/category/flags-symbols.html" class="inline-block px-3 py-1 text-sm rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">Flags &amp; Symbols</a></div>
+</section>
+
+<section class="mb-8">
+<div class="flex items-center justify-between gap-2 mb-3">
+<h2 class="text-lg font-semibold">Smileys &amp; Emotion <span class="text-gray-500 font-normal text-sm">(102)</span></h2>
+<a href="/category/smileys-emotion.html" class="text-sm text-purple-600 hover:text-purple-800">View all &rarr;</a>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+<a href="/emoji/grinning-face-sweat.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😅</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Grinning Face with Sweat</span>
+</div></a>
+<a href="/emoji/rofl.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤣</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Rolling on the Floor Laughing</span>
+</div></a>
+<a href="/emoji/tears-of-joy.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😂</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Tears of Joy</span>
+</div></a>
+<a href="/emoji/slightly-smiling-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🙂</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Slightly Smiling Face</span>
+</div></a>
+<a href="/emoji/upside-down-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🙃</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Upside-Down Face</span>
+</div></a>
+<a href="/emoji/winking-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😉</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Winking Face</span>
+</div></a>
+<a href="/emoji/smiling-face-smiling-eyes.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😊</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Smiling Face with Smiling Eyes</span>
+</div></a>
+<a href="/emoji/smiling-face-halo.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😇</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Smiling Face with Halo</span>
+</div></a>
+<a href="/emoji/smiling-face-hearts.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥰</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Smiling Face with Hearts</span>
+</div></a>
+<a href="/emoji/heart-eyes.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😍</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Smiling Face with Heart-Eyes</span>
+</div></a>
+<a href="/emoji/face-blowing-kiss.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😘</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face Blowing a Kiss</span>
+</div></a>
+<a href="/emoji/kissing-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😗</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Kissing Face</span>
+</div></a>
+<a href="/emoji/kissing-face-closed-eyes.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😚</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Kissing Face with Closed Eyes</span>
+</div></a>
+<a href="/emoji/face-savoring-food.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😋</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face Savoring Food</span>
+</div></a>
+<a href="/emoji/face-with-tongue.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😛</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Tongue</span>
+</div></a>
+<a href="/emoji/winking-face-tongue.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😜</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Winking Face with Tongue</span>
+</div></a>
+<a href="/emoji/squinting-face-tongue.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😝</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Squinting Face with Tongue</span>
+</div></a>
+<a href="/emoji/money-mouth-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤑</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Money-Mouth Face</span>
+</div></a>
+<a href="/emoji/hugging-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤗</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hugging Face</span>
+</div></a>
+<a href="/emoji/shushing-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤫</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Shushing Face</span>
+</div></a>
+<a href="/emoji/thinking-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤔</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Thinking Face</span>
+</div></a>
+<a href="/emoji/zipper-mouth-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤐</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Zipper-Mouth Face</span>
+</div></a>
+<a href="/emoji/raised-eyebrow.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤨</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Raised Eyebrow</span>
+</div></a>
+<a href="/emoji/neutral-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😐</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Neutral Face</span>
+</div></a>
+<a href="/emoji/expressionless-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😑</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Expressionless Face</span>
+</div></a>
+<a href="/emoji/face-without-mouth.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😶</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face Without Mouth</span>
+</div></a>
+<a href="/emoji/smirking-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😏</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Smirking Face</span>
+</div></a>
+<a href="/emoji/unamused-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😒</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Unamused Face</span>
+</div></a>
+<a href="/emoji/rolling-eyes.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🙄</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Rolling Eyes</span>
+</div></a>
+<a href="/emoji/grimacing-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😬</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Grimacing Face</span>
+</div></a>
+<a href="/emoji/lying-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤥</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Lying Face</span>
+</div></a>
+<a href="/emoji/relieved-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😌</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Relieved Face</span>
+</div></a>
+<a href="/emoji/grinning-face-big-eyes.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😃</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Grinning Face with Big Eyes</span>
+</div></a>
+<a href="/emoji/zany-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤪</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Zany Face</span>
+</div></a>
+<a href="/emoji/face-hand-over-mouth.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤭</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Hand Over Mouth</span>
+</div></a>
+<a href="/emoji/beaming-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😁</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Beaming Face with Smiling Eyes</span>
+</div></a>
+<a href="/emoji/star-struck.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤩</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Star-Struck</span>
+</div></a>
+<a href="/emoji/grinning-squinting-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😆</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Grinning Squinting Face</span>
+</div></a>
+<a href="/emoji/grinning-face-smiling-eyes.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😄</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Grinning Face with Smiling Eyes</span>
+</div></a>
+<a href="/emoji/pensive-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😔</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Pensive Face</span>
+</div></a>
+<a href="/emoji/sleepy-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😪</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Sleepy Face</span>
+</div></a>
+<a href="/emoji/drooling-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤤</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Drooling Face</span>
+</div></a>
+<a href="/emoji/sleeping-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😴</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Sleeping Face</span>
+</div></a>
+<a href="/emoji/face-medical-mask.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😷</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Medical Mask</span>
+</div></a>
+<a href="/emoji/face-thermometer.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤒</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Thermometer</span>
+</div></a>
+<a href="/emoji/face-head-bandage.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤕</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Head-Bandage</span>
+</div></a>
+<a href="/emoji/nauseated-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤢</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Nauseated Face</span>
+</div></a>
+<a href="/emoji/face-vomiting.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤮</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face Vomiting</span>
+</div></a>
+<a href="/emoji/hot-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥵</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hot Face</span>
+</div></a>
+<a href="/emoji/cold-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥶</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Cold Face</span>
+</div></a>
+<a href="/emoji/face-crossed-out-eyes.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😵</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Crossed-Out Eyes</span>
+</div></a>
+<a href="/emoji/woozy-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥴</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Woozy Face</span>
+</div></a>
+<a href="/emoji/face-screaming-fear.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😱</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face Screaming in Fear</span>
+</div></a>
+<a href="/emoji/fearful-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😨</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Fearful Face</span>
+</div></a>
+<a href="/emoji/anxious-face-sweat.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😰</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Anxious Face with Sweat</span>
+</div></a>
+<a href="/emoji/crying-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😢</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Crying Face</span>
+</div></a>
+<a href="/emoji/loudly-crying-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😭</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Loudly Crying Face</span>
+</div></a>
+<a href="/emoji/face-steam-nose.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😤</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Steam From Nose</span>
+</div></a>
+<a href="/emoji/pouting-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😡</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Pouting Face</span>
+</div></a>
+<a href="/emoji/angry-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😠</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Angry Face</span>
+</div></a>
+<a href="/emoji/face-symbols-mouth.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤬</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Symbols on Mouth</span>
+</div></a>
+<a href="/emoji/smiling-face-horns.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😈</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Smiling Face with Horns</span>
+</div></a>
+<a href="/emoji/angry-face-horns.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👿</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Angry Face with Horns</span>
+</div></a>
+<a href="/emoji/skull.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💀</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Skull</span>
+</div></a>
+<a href="/emoji/skull-crossbones.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">☠️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Skull and Crossbones</span>
+</div></a>
+<a href="/emoji/pile-of-poo.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💩</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Pile of Poo</span>
+</div></a>
+<a href="/emoji/clown-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤡</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Clown Face</span>
+</div></a>
+<a href="/emoji/ghost.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👻</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Ghost</span>
+</div></a>
+<a href="/emoji/alien.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👽</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Alien</span>
+</div></a>
+<a href="/emoji/robot.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤖</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Robot</span>
+</div></a>
+<a href="/emoji/grinning-cat.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😺</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Grinning Cat</span>
+</div></a>
+<a href="/emoji/smiling-cat-heart-eyes.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😻</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Smiling Cat with Heart-Eyes</span>
+</div></a>
+<a href="/emoji/see-no-evil-monkey.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🙈</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">See-No-Evil Monkey</span>
+</div></a>
+<a href="/emoji/hear-no-evil-monkey.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🙉</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hear-No-Evil Monkey</span>
+</div></a>
+<a href="/emoji/speak-no-evil-monkey.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🙊</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Speak-No-Evil Monkey</span>
+</div></a>
+<a href="/emoji/pleading-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥺</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Pleading Face</span>
+</div></a>
+<a href="/emoji/melting-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🫠</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Melting Face</span>
+</div></a>
+<a href="/emoji/saluting-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🫡</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Saluting Face</span>
+</div></a>
+<a href="/emoji/face-holding-back-tears.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥹</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face Holding Back Tears</span>
+</div></a>
+<a href="/emoji/face-exhaling.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😮‍💨</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face Exhaling</span>
+</div></a>
+<a href="/emoji/face-peeking-eye.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🫣</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Peeking Eye</span>
+</div></a>
+<a href="/emoji/face-open-eyes-hand-mouth.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🫢</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Open Eyes and Hand Over Mouth</span>
+</div></a>
+<a href="/emoji/nerd-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤓</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Nerd Face</span>
+</div></a>
+<a href="/emoji/smiling-face-sunglasses.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😎</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Smiling Face with Sunglasses</span>
+</div></a>
+<a href="/emoji/disguised-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥸</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Disguised Face</span>
+</div></a>
+<a href="/emoji/face-open-mouth.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😮</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Open Mouth</span>
+</div></a>
+<a href="/emoji/hushed-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😯</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hushed Face</span>
+</div></a>
+<a href="/emoji/astonished-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😲</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Astonished Face</span>
+</div></a>
+<a href="/emoji/yawning-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥱</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Yawning Face</span>
+</div></a>
+<a href="/emoji/flushed-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😳</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Flushed Face</span>
+</div></a>
+<a href="/emoji/smiling-face-with-tear.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥲</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Smiling Face with Tear</span>
+</div></a>
+<a href="/emoji/sad-but-relieved-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😥</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Sad but Relieved Face</span>
+</div></a>
+<a href="/emoji/dotted-line-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🫥</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Dotted Line Face</span>
+</div></a>
+<a href="/emoji/face-in-clouds.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😶‍🌫️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face in Clouds</span>
+</div></a>
+<a href="/emoji/face-diagonal-mouth.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🫤</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Face with Diagonal Mouth</span>
+</div></a>
+<a href="/emoji/disappointed-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😞</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Disappointed Face</span>
+</div></a>
+<a href="/emoji/downcast-face-sweat.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😓</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Downcast Face with Sweat</span>
+</div></a>
+<a href="/emoji/tired-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😫</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Tired Face</span>
+</div></a>
+<a href="/emoji/exploding-head.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤯</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Exploding Head</span>
+</div></a>
+<a href="/emoji/huffing-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😤</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Huffing Face</span>
+</div></a>
+<a href="/emoji/weary-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😩</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Weary Face</span>
+</div></a>
+<a href="/emoji/grinning-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">😀</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Grinning Face</span>
+</div></a>
+</div>
+</section>
+<section class="mb-8">
+<div class="flex items-center justify-between gap-2 mb-3">
+<h2 class="text-lg font-semibold">Hearts &amp; Love <span class="text-gray-500 font-normal text-sm">(27)</span></h2>
+<a href="/category/hearts-love.html" class="text-sm text-purple-600 hover:text-purple-800">View all &rarr;</a>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+<a href="/emoji/orange-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🧡</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Orange Heart</span>
+</div></a>
+<a href="/emoji/yellow-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💛</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Yellow Heart</span>
+</div></a>
+<a href="/emoji/green-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💚</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Green Heart</span>
+</div></a>
+<a href="/emoji/blue-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💙</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Blue Heart</span>
+</div></a>
+<a href="/emoji/purple-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💜</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Purple Heart</span>
+</div></a>
+<a href="/emoji/black-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🖤</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Black Heart</span>
+</div></a>
+<a href="/emoji/white-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤍</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">White Heart</span>
+</div></a>
+<a href="/emoji/brown-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤎</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Brown Heart</span>
+</div></a>
+<a href="/emoji/two-hearts.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💕</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Two Hearts</span>
+</div></a>
+<a href="/emoji/revolving-hearts.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💞</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Revolving Hearts</span>
+</div></a>
+<a href="/emoji/beating-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💓</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Beating Heart</span>
+</div></a>
+<a href="/emoji/growing-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💗</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Growing Heart</span>
+</div></a>
+<a href="/emoji/sparkling-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💖</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Sparkling Heart</span>
+</div></a>
+<a href="/emoji/heart-with-arrow.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💘</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Heart with Arrow</span>
+</div></a>
+<a href="/emoji/heart-with-ribbon.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💝</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Heart with Ribbon</span>
+</div></a>
+<a href="/emoji/heart-decoration.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💟</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Heart Decoration</span>
+</div></a>
+<a href="/emoji/heart-exclamation.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">❣️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Heart Exclamation</span>
+</div></a>
+<a href="/emoji/broken-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💔</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Broken Heart</span>
+</div></a>
+<a href="/emoji/kiss-mark.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💋</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Kiss Mark</span>
+</div></a>
+<a href="/emoji/couple-with-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💑</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Couple with Heart</span>
+</div></a>
+<a href="/emoji/kiss-emoji.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💏</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Kiss</span>
+</div></a>
+<a href="/emoji/pink-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🩷</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Pink Heart</span>
+</div></a>
+<a href="/emoji/light-blue-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🩵</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Light Blue Heart</span>
+</div></a>
+<a href="/emoji/grey-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🩶</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Grey Heart</span>
+</div></a>
+<a href="/emoji/heart-on-fire.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">❤️‍🔥</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Heart on Fire</span>
+</div></a>
+<a href="/emoji/mending-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">❤️‍🩹</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Mending Heart</span>
+</div></a>
+<a href="/emoji/red-heart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">❤️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Red Heart</span>
+</div></a>
+</div>
+</section>
+<section class="mb-8">
+<div class="flex items-center justify-between gap-2 mb-3">
+<h2 class="text-lg font-semibold">Hand Gestures <span class="text-gray-500 font-normal text-sm">(36)</span></h2>
+<a href="/category/hand-gestures.html" class="text-sm text-purple-600 hover:text-purple-800">View all &rarr;</a>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+<a href="/emoji/waving-hand.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👋</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Waving Hand</span>
+</div></a>
+<a href="/emoji/raised-back-hand.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤚</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Raised Back of Hand</span>
+</div></a>
+<a href="/emoji/hand-fingers-splayed.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🖐️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hand with Fingers Splayed</span>
+</div></a>
+<a href="/emoji/raised-hand.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">✋</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Raised Hand</span>
+</div></a>
+<a href="/emoji/ok-hand.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👌</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">OK Hand</span>
+</div></a>
+<a href="/emoji/pinched-fingers.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤌</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Pinched Fingers</span>
+</div></a>
+<a href="/emoji/victory-hand.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">✌️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Victory Hand</span>
+</div></a>
+<a href="/emoji/crossed-fingers.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤞</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Crossed Fingers</span>
+</div></a>
+<a href="/emoji/love-you-gesture.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤟</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Love-You Gesture</span>
+</div></a>
+<a href="/emoji/sign-of-horns.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤘</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Sign of the Horns</span>
+</div></a>
+<a href="/emoji/call-me-hand.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤙</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Call Me Hand</span>
+</div></a>
+<a href="/emoji/pointing-left.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👈</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Backhand Index Pointing Left</span>
+</div></a>
+<a href="/emoji/pointing-right.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👉</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Backhand Index Pointing Right</span>
+</div></a>
+<a href="/emoji/pointing-up.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👆</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Backhand Index Pointing Up</span>
+</div></a>
+<a href="/emoji/pointing-down.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👇</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Backhand Index Pointing Down</span>
+</div></a>
+<a href="/emoji/index-pointing-up.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">☝️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Index Pointing Up</span>
+</div></a>
+<a href="/emoji/thumbs-up.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👍</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Thumbs Up</span>
+</div></a>
+<a href="/emoji/thumbs-down.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👎</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Thumbs Down</span>
+</div></a>
+<a href="/emoji/raised-fist.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">✊</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Raised Fist</span>
+</div></a>
+<a href="/emoji/oncoming-fist.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👊</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Oncoming Fist</span>
+</div></a>
+<a href="/emoji/left-facing-fist.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤛</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Left-Facing Fist</span>
+</div></a>
+<a href="/emoji/right-facing-fist.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤜</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Right-Facing Fist</span>
+</div></a>
+<a href="/emoji/clapping-hands.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👏</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Clapping Hands</span>
+</div></a>
+<a href="/emoji/raising-hands.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🙌</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Raising Hands</span>
+</div></a>
+<a href="/emoji/open-hands.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👐</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Open Hands</span>
+</div></a>
+<a href="/emoji/handshake.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤝</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Handshake</span>
+</div></a>
+<a href="/emoji/folded-hands.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🙏</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Folded Hands</span>
+</div></a>
+<a href="/emoji/flexed-biceps.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💪</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Flexed Biceps</span>
+</div></a>
+<a href="/emoji/heart-hands.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🫶</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Heart Hands</span>
+</div></a>
+<a href="/emoji/finger-thumb-crossed.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🫰</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hand with Index Finger and Thumb Crossed</span>
+</div></a>
+<a href="/emoji/index-pointing-viewer.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🫵</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Index Pointing at the Viewer</span>
+</div></a>
+<a href="/emoji/rightwards-hand.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🫱</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Rightwards Hand</span>
+</div></a>
+<a href="/emoji/leftwards-hand.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🫲</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Leftwards Hand</span>
+</div></a>
+<a href="/emoji/writing-hand.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">✍️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Writing Hand</span>
+</div></a>
+<a href="/emoji/selfie.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤳</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Selfie</span>
+</div></a>
+<a href="/emoji/nail-polish.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💅</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Nail Polish</span>
+</div></a>
+</div>
+</section>
+<section class="mb-8">
+<div class="flex items-center justify-between gap-2 mb-3">
+<h2 class="text-lg font-semibold">People &amp; Body <span class="text-gray-500 font-normal text-sm">(24)</span></h2>
+<a href="/category/people-body.html" class="text-sm text-purple-600 hover:text-purple-800">View all &rarr;</a>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+<a href="/emoji/leg.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🦵</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Leg</span>
+</div></a>
+<a href="/emoji/baby.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👶</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Baby</span>
+</div></a>
+<a href="/emoji/boy.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👦</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Boy</span>
+</div></a>
+<a href="/emoji/girl.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👧</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Girl</span>
+</div></a>
+<a href="/emoji/man.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👨</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Man</span>
+</div></a>
+<a href="/emoji/woman.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👩</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Woman</span>
+</div></a>
+<a href="/emoji/person.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🧑</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Person</span>
+</div></a>
+<a href="/emoji/old-man.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👴</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Old Man</span>
+</div></a>
+<a href="/emoji/old-woman.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👵</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Old Woman</span>
+</div></a>
+<a href="/emoji/brain.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🧠</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Brain</span>
+</div></a>
+<a href="/emoji/eyes.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👀</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Eyes</span>
+</div></a>
+<a href="/emoji/eye.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👁️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Eye</span>
+</div></a>
+<a href="/emoji/tongue.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👅</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Tongue</span>
+</div></a>
+<a href="/emoji/mouth.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👄</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Mouth</span>
+</div></a>
+<a href="/emoji/tooth.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🦷</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Tooth</span>
+</div></a>
+<a href="/emoji/bone.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🦴</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Bone</span>
+</div></a>
+<a href="/emoji/foot.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🦶</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Foot</span>
+</div></a>
+<a href="/emoji/ear.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👂</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Ear</span>
+</div></a>
+<a href="/emoji/nose.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">👃</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Nose</span>
+</div></a>
+<a href="/emoji/woman-dancing.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💃</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Woman Dancing</span>
+</div></a>
+<a href="/emoji/man-dancing.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🕺</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Man Dancing</span>
+</div></a>
+<a href="/emoji/person-lotus-position.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🧘</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Person in Lotus Position</span>
+</div></a>
+<a href="/emoji/person-running.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🏃</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Person Running</span>
+</div></a>
+<a href="/emoji/person-walking.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🚶</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Person Walking</span>
+</div></a>
+</div>
+</section>
+<section class="mb-8">
+<div class="flex items-center justify-between gap-2 mb-3">
+<h2 class="text-lg font-semibold">Animals &amp; Nature <span class="text-gray-500 font-normal text-sm">(33)</span></h2>
+<a href="/category/animals-nature.html" class="text-sm text-purple-600 hover:text-purple-800">View all &rarr;</a>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+<a href="/emoji/dog-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐶</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Dog Face</span>
+</div></a>
+<a href="/emoji/cat-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐱</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Cat Face</span>
+</div></a>
+<a href="/emoji/mouse-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐭</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Mouse Face</span>
+</div></a>
+<a href="/emoji/hamster.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐹</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hamster</span>
+</div></a>
+<a href="/emoji/rabbit-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐰</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Rabbit Face</span>
+</div></a>
+<a href="/emoji/fox.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🦊</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Fox</span>
+</div></a>
+<a href="/emoji/bear.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐻</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Bear</span>
+</div></a>
+<a href="/emoji/panda.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐼</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Panda</span>
+</div></a>
+<a href="/emoji/koala.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐨</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Koala</span>
+</div></a>
+<a href="/emoji/tiger-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐯</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Tiger Face</span>
+</div></a>
+<a href="/emoji/lion.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🦁</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Lion</span>
+</div></a>
+<a href="/emoji/cow-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐮</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Cow Face</span>
+</div></a>
+<a href="/emoji/pig-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐷</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Pig Face</span>
+</div></a>
+<a href="/emoji/frog.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐸</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Frog</span>
+</div></a>
+<a href="/emoji/monkey-face.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐵</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Monkey Face</span>
+</div></a>
+<a href="/emoji/chicken.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐔</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Chicken</span>
+</div></a>
+<a href="/emoji/penguin.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐧</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Penguin</span>
+</div></a>
+<a href="/emoji/bird.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐦</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Bird</span>
+</div></a>
+<a href="/emoji/eagle.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🦅</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Eagle</span>
+</div></a>
+<a href="/emoji/butterfly.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🦋</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Butterfly</span>
+</div></a>
+<a href="/emoji/bug.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐛</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Bug</span>
+</div></a>
+<a href="/emoji/honeybee.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐝</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Honeybee</span>
+</div></a>
+<a href="/emoji/snake.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐍</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Snake</span>
+</div></a>
+<a href="/emoji/turtle.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐢</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Turtle</span>
+</div></a>
+<a href="/emoji/tropical-fish.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐠</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Tropical Fish</span>
+</div></a>
+<a href="/emoji/dolphin.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐬</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Dolphin</span>
+</div></a>
+<a href="/emoji/shark.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🦈</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Shark</span>
+</div></a>
+<a href="/emoji/octopus.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐙</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Octopus</span>
+</div></a>
+<a href="/emoji/unicorn.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🦄</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Unicorn</span>
+</div></a>
+<a href="/emoji/paw-prints.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐾</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Paw Prints</span>
+</div></a>
+<a href="/emoji/dove.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🕊️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Dove</span>
+</div></a>
+<a href="/emoji/butterfly-2.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🦋</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Butterfly Duplicate Removed</span>
+</div></a>
+<a href="/emoji/spouting-whale.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🐳</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Spouting Whale</span>
+</div></a>
+</div>
+</section>
+<section class="mb-8">
+<div class="flex items-center justify-between gap-2 mb-3">
+<h2 class="text-lg font-semibold">Plants &amp; Flowers <span class="text-gray-500 font-normal text-sm">(15)</span></h2>
+<a href="/category/plants-flowers.html" class="text-sm text-purple-600 hover:text-purple-800">View all &rarr;</a>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+<a href="/emoji/cherry-blossom.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌸</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Cherry Blossom</span>
+</div></a>
+<a href="/emoji/rose.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌹</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Rose</span>
+</div></a>
+<a href="/emoji/hibiscus.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌺</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hibiscus</span>
+</div></a>
+<a href="/emoji/sunflower.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌻</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Sunflower</span>
+</div></a>
+<a href="/emoji/blossom.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌼</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Blossom</span>
+</div></a>
+<a href="/emoji/tulip.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌷</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Tulip</span>
+</div></a>
+<a href="/emoji/seedling.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌱</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Seedling</span>
+</div></a>
+<a href="/emoji/evergreen-tree.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌲</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Evergreen Tree</span>
+</div></a>
+<a href="/emoji/deciduous-tree.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌳</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Deciduous Tree</span>
+</div></a>
+<a href="/emoji/palm-tree.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌴</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Palm Tree</span>
+</div></a>
+<a href="/emoji/cactus.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌵</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Cactus</span>
+</div></a>
+<a href="/emoji/four-leaf-clover.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍀</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Four Leaf Clover</span>
+</div></a>
+<a href="/emoji/maple-leaf.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍁</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Maple Leaf</span>
+</div></a>
+<a href="/emoji/potted-plant.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🪴</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Potted Plant</span>
+</div></a>
+<a href="/emoji/mushroom.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍄</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Mushroom</span>
+</div></a>
+</div>
+</section>
+<section class="mb-8">
+<div class="flex items-center justify-between gap-2 mb-3">
+<h2 class="text-lg font-semibold">Food &amp; Drink <span class="text-gray-500 font-normal text-sm">(31)</span></h2>
+<a href="/category/food-drink.html" class="text-sm text-purple-600 hover:text-purple-800">View all &rarr;</a>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+<a href="/emoji/red-apple.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍎</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Red Apple</span>
+</div></a>
+<a href="/emoji/tangerine.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍊</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Tangerine</span>
+</div></a>
+<a href="/emoji/lemon.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍋</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Lemon</span>
+</div></a>
+<a href="/emoji/banana.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍌</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Banana</span>
+</div></a>
+<a href="/emoji/watermelon.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍉</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Watermelon</span>
+</div></a>
+<a href="/emoji/grapes.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍇</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Grapes</span>
+</div></a>
+<a href="/emoji/strawberry.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍓</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Strawberry</span>
+</div></a>
+<a href="/emoji/peach.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍑</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Peach</span>
+</div></a>
+<a href="/emoji/cherries.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍒</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Cherries</span>
+</div></a>
+<a href="/emoji/avocado.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥑</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Avocado</span>
+</div></a>
+<a href="/emoji/hamburger.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍔</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hamburger</span>
+</div></a>
+<a href="/emoji/taco.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌮</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Taco</span>
+</div></a>
+<a href="/emoji/burrito.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌯</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Burrito</span>
+</div></a>
+<a href="/emoji/steaming-bowl.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍜</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Steaming Bowl</span>
+</div></a>
+<a href="/emoji/sushi.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍣</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Sushi</span>
+</div></a>
+<a href="/emoji/soft-ice-cream.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍦</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Soft Ice Cream</span>
+</div></a>
+<a href="/emoji/doughnut.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍩</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Doughnut</span>
+</div></a>
+<a href="/emoji/cookie.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍪</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Cookie</span>
+</div></a>
+<a href="/emoji/birthday-cake.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎂</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Birthday Cake</span>
+</div></a>
+<a href="/emoji/shortcake.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍰</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Shortcake</span>
+</div></a>
+<a href="/emoji/hot-beverage.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">☕</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hot Beverage</span>
+</div></a>
+<a href="/emoji/beer-mug.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍺</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Beer Mug</span>
+</div></a>
+<a href="/emoji/wine-glass.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍷</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Wine Glass</span>
+</div></a>
+<a href="/emoji/cocktail-glass.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍸</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Cocktail Glass</span>
+</div></a>
+<a href="/emoji/pizza.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍕</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Pizza</span>
+</div></a>
+<a href="/emoji/hot-pepper.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌶️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hot Pepper</span>
+</div></a>
+<a href="/emoji/popcorn.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍿</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Popcorn</span>
+</div></a>
+<a href="/emoji/cupcake.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🧁</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Cupcake</span>
+</div></a>
+<a href="/emoji/lollipop.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍭</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Lollipop</span>
+</div></a>
+<a href="/emoji/candy.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🍬</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Candy</span>
+</div></a>
+<a href="/emoji/ice.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🧊</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Ice</span>
+</div></a>
+</div>
+</section>
+<section class="mb-8">
+<div class="flex items-center justify-between gap-2 mb-3">
+<h2 class="text-lg font-semibold">Activities &amp; Sports <span class="text-gray-500 font-normal text-sm">(23)</span></h2>
+<a href="/category/activities-sports.html" class="text-sm text-purple-600 hover:text-purple-800">View all &rarr;</a>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+<a href="/emoji/basketball.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🏀</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Basketball</span>
+</div></a>
+<a href="/emoji/american-football.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🏈</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">American Football</span>
+</div></a>
+<a href="/emoji/baseball.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⚾</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Baseball</span>
+</div></a>
+<a href="/emoji/tennis.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎾</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Tennis</span>
+</div></a>
+<a href="/emoji/volleyball.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🏐</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Volleyball</span>
+</div></a>
+<a href="/emoji/trophy.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🏆</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Trophy</span>
+</div></a>
+<a href="/emoji/first-place-medal.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥇</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">1st Place Medal</span>
+</div></a>
+<a href="/emoji/second-place-medal.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥈</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">2nd Place Medal</span>
+</div></a>
+<a href="/emoji/third-place-medal.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥉</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">3rd Place Medal</span>
+</div></a>
+<a href="/emoji/video-game.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎮</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Video Game</span>
+</div></a>
+<a href="/emoji/bullseye.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎯</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Bullseye</span>
+</div></a>
+<a href="/emoji/game-die.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎲</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Game Die</span>
+</div></a>
+<a href="/emoji/artist-palette.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎨</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Artist Palette</span>
+</div></a>
+<a href="/emoji/performing-arts.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎭</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Performing Arts</span>
+</div></a>
+<a href="/emoji/guitar.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎸</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Guitar</span>
+</div></a>
+<a href="/emoji/musical-keyboard.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎹</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Musical Keyboard</span>
+</div></a>
+<a href="/emoji/trumpet.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎺</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Trumpet</span>
+</div></a>
+<a href="/emoji/drum.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🥁</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Drum</span>
+</div></a>
+<a href="/emoji/person-lifting-weights.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🏋️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Person Lifting Weights</span>
+</div></a>
+<a href="/emoji/person-cartwheeling.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🤸</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Person Cartwheeling</span>
+</div></a>
+<a href="/emoji/person-swimming.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🏊</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Person Swimming</span>
+</div></a>
+<a href="/emoji/person-biking.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🚴</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Person Biking</span>
+</div></a>
+<a href="/emoji/soccer-ball.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⚽</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Soccer Ball</span>
+</div></a>
+</div>
+</section>
+<section class="mb-8">
+<div class="flex items-center justify-between gap-2 mb-3">
+<h2 class="text-lg font-semibold">Travel &amp; Places <span class="text-gray-500 font-normal text-sm">(9)</span></h2>
+<a href="/category/travel-places.html" class="text-sm text-purple-600 hover:text-purple-800">View all &rarr;</a>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+<a href="/emoji/automobile.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🚗</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Automobile</span>
+</div></a>
+<a href="/emoji/taxi.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🚕</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Taxi</span>
+</div></a>
+<a href="/emoji/rocket.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🚀</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Rocket</span>
+</div></a>
+<a href="/emoji/airplane.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">✈️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Airplane</span>
+</div></a>
+<a href="/emoji/house.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🏠</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">House</span>
+</div></a>
+<a href="/emoji/office-building.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🏢</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Office Building</span>
+</div></a>
+<a href="/emoji/beach-umbrella.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🏖️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Beach with Umbrella</span>
+</div></a>
+<a href="/emoji/globe-europe-africa.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌍</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Globe Showing Europe-Africa</span>
+</div></a>
+<a href="/emoji/statue-of-liberty.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🗽</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Statue of Liberty</span>
+</div></a>
+</div>
+</section>
+<section class="mb-8">
+<div class="flex items-center justify-between gap-2 mb-3">
+<h2 class="text-lg font-semibold">Weather &amp; Sky <span class="text-gray-500 font-normal text-sm">(18)</span></h2>
+<a href="/category/weather-sky.html" class="text-sm text-purple-600 hover:text-purple-800">View all &rarr;</a>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+<a href="/emoji/sun.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">☀️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Sun</span>
+</div></a>
+<a href="/emoji/crescent-moon.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌙</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Crescent Moon</span>
+</div></a>
+<a href="/emoji/star.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⭐</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Star</span>
+</div></a>
+<a href="/emoji/glowing-star.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌟</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Glowing Star</span>
+</div></a>
+<a href="/emoji/sparkles.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">✨</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Sparkles</span>
+</div></a>
+<a href="/emoji/rainbow.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌈</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Rainbow</span>
+</div></a>
+<a href="/emoji/fire.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🔥</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Fire</span>
+</div></a>
+<a href="/emoji/droplet.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💧</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Droplet</span>
+</div></a>
+<a href="/emoji/snowflake.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">❄️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Snowflake</span>
+</div></a>
+<a href="/emoji/high-voltage.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⚡</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">High Voltage</span>
+</div></a>
+<a href="/emoji/water-wave.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌊</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Water Wave</span>
+</div></a>
+<a href="/emoji/sun-behind-small-cloud.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌤️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Sun Behind Small Cloud</span>
+</div></a>
+<a href="/emoji/cloud-lightning-rain.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⛈️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Cloud with Lightning and Rain</span>
+</div></a>
+<a href="/emoji/tornado.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌪️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Tornado</span>
+</div></a>
+<a href="/emoji/fog.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌫️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Fog</span>
+</div></a>
+<a href="/emoji/cloud.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">☁️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Cloud</span>
+</div></a>
+<a href="/emoji/full-moon.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌕</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Full Moon</span>
+</div></a>
+<a href="/emoji/new-moon.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🌑</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">New Moon</span>
+</div></a>
+</div>
+</section>
+<section class="mb-8">
+<div class="flex items-center justify-between gap-2 mb-3">
+<h2 class="text-lg font-semibold">Objects &amp; Symbols <span class="text-gray-500 font-normal text-sm">(50)</span></h2>
+<a href="/category/objects-symbols.html" class="text-sm text-purple-600 hover:text-purple-800">View all &rarr;</a>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+<a href="/emoji/hundred-points.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💯</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hundred Points</span>
+</div></a>
+<a href="/emoji/money-bag.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💰</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Money Bag</span>
+</div></a>
+<a href="/emoji/gem-stone.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💎</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Gem Stone</span>
+</div></a>
+<a href="/emoji/musical-note.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎵</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Musical Note</span>
+</div></a>
+<a href="/emoji/musical-notes.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎶</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Musical Notes</span>
+</div></a>
+<a href="/emoji/bell.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🔔</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Bell</span>
+</div></a>
+<a href="/emoji/mobile-phone.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">📱</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Mobile Phone</span>
+</div></a>
+<a href="/emoji/laptop.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💻</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Laptop</span>
+</div></a>
+<a href="/emoji/camera.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">📷</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Camera</span>
+</div></a>
+<a href="/emoji/wrapped-gift.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎁</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Wrapped Gift</span>
+</div></a>
+<a href="/emoji/ribbon.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎀</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Ribbon</span>
+</div></a>
+<a href="/emoji/party-popper.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎉</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Party Popper</span>
+</div></a>
+<a href="/emoji/confetti-ball.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎊</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Confetti Ball</span>
+</div></a>
+<a href="/emoji/balloon.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎈</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Balloon</span>
+</div></a>
+<a href="/emoji/jack-o-lantern.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎃</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Jack-O-Lantern</span>
+</div></a>
+<a href="/emoji/christmas-tree.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎄</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Christmas Tree</span>
+</div></a>
+<a href="/emoji/santa-claus.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎅</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Santa Claus</span>
+</div></a>
+<a href="/emoji/memo.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">📝</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Memo</span>
+</div></a>
+<a href="/emoji/pushpin.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">📌</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Pushpin</span>
+</div></a>
+<a href="/emoji/key.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🔑</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Key</span>
+</div></a>
+<a href="/emoji/locked.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🔒</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Locked</span>
+</div></a>
+<a href="/emoji/alarm-clock.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⏰</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Alarm Clock</span>
+</div></a>
+<a href="/emoji/hourglass-done.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⌛</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hourglass Done</span>
+</div></a>
+<a href="/emoji/hourglass-not-done.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⏳</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hourglass Not Done</span>
+</div></a>
+<a href="/emoji/bubbles.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🫧</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Bubbles</span>
+</div></a>
+<a href="/emoji/magic-wand.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🪄</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Magic Wand</span>
+</div></a>
+<a href="/emoji/crystal-ball.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🔮</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Crystal Ball</span>
+</div></a>
+<a href="/emoji/nazar-amulet.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🧿</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Nazar Amulet</span>
+</div></a>
+<a href="/emoji/hamsa.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🪬</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Hamsa</span>
+</div></a>
+<a href="/emoji/light-bulb.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💡</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Light Bulb</span>
+</div></a>
+<a href="/emoji/books.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">📚</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Books</span>
+</div></a>
+<a href="/emoji/pencil.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">✏️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Pencil</span>
+</div></a>
+<a href="/emoji/pen.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🖊️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Pen</span>
+</div></a>
+<a href="/emoji/microphone.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎤</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Microphone</span>
+</div></a>
+<a href="/emoji/headphone.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎧</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Headphone</span>
+</div></a>
+<a href="/emoji/clapper-board.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🎬</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Clapper Board</span>
+</div></a>
+<a href="/emoji/television.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">📺</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Television</span>
+</div></a>
+<a href="/emoji/link.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🔗</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Link</span>
+</div></a>
+<a href="/emoji/wrench.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🔧</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Wrench</span>
+</div></a>
+<a href="/emoji/gear.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⚙️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Gear</span>
+</div></a>
+<a href="/emoji/shopping-cart.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🛒</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Shopping Cart</span>
+</div></a>
+<a href="/emoji/pill.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💊</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Pill</span>
+</div></a>
+<a href="/emoji/adhesive-bandage.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🩹</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Adhesive Bandage</span>
+</div></a>
+<a href="/emoji/mirror.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🪞</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Mirror</span>
+</div></a>
+<a href="/emoji/teddy-bear.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🧸</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Teddy Bear</span>
+</div></a>
+<a href="/emoji/desktop-computer.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🖥️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Desktop Computer</span>
+</div></a>
+<a href="/emoji/keyboard.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⌨️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Keyboard</span>
+</div></a>
+<a href="/emoji/computer-mouse.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🖱️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Computer Mouse</span>
+</div></a>
+<a href="/emoji/floppy-disk.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💾</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Floppy Disk</span>
+</div></a>
+<a href="/emoji/satellite-antenna.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">📡</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Satellite Antenna</span>
+</div></a>
+</div>
+</section>
+<section class="mb-8">
+<div class="flex items-center justify-between gap-2 mb-3">
+<h2 class="text-lg font-semibold">Flags &amp; Symbols <span class="text-gray-500 font-normal text-sm">(38)</span></h2>
+<a href="/category/flags-symbols.html" class="text-sm text-purple-600 hover:text-purple-800">View all &rarr;</a>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+<a href="/emoji/triangular-flag.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🚩</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Triangular Flag</span>
+</div></a>
+<a href="/emoji/rainbow-flag.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🏳️‍🌈</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Rainbow Flag</span>
+</div></a>
+<a href="/emoji/check-mark-button.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">✅</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Check Mark Button</span>
+</div></a>
+<a href="/emoji/cross-mark.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">❌</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Cross Mark</span>
+</div></a>
+<a href="/emoji/question-mark.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">❓</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Question Mark</span>
+</div></a>
+<a href="/emoji/exclamation-mark.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">❗</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Exclamation Mark</span>
+</div></a>
+<a href="/emoji/zzz.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">💤</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Zzz</span>
+</div></a>
+<a href="/emoji/recycling-symbol.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♻️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Recycling Symbol</span>
+</div></a>
+<a href="/emoji/warning.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⚠️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Warning</span>
+</div></a>
+<a href="/emoji/red-circle.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🔴</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Red Circle</span>
+</div></a>
+<a href="/emoji/blue-circle.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🔵</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Blue Circle</span>
+</div></a>
+<a href="/emoji/black-square.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⬛</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Black Large Square</span>
+</div></a>
+<a href="/emoji/white-square.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⬜</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">White Large Square</span>
+</div></a>
+<a href="/emoji/aries.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♈</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Aries</span>
+</div></a>
+<a href="/emoji/taurus.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♉</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Taurus</span>
+</div></a>
+<a href="/emoji/gemini.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♊</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Gemini</span>
+</div></a>
+<a href="/emoji/cancer-zodiac.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♋</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Cancer</span>
+</div></a>
+<a href="/emoji/leo.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♌</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Leo</span>
+</div></a>
+<a href="/emoji/virgo.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♍</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Virgo</span>
+</div></a>
+<a href="/emoji/libra.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♎</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Libra</span>
+</div></a>
+<a href="/emoji/scorpio.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♏</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Scorpio</span>
+</div></a>
+<a href="/emoji/sagittarius.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♐</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Sagittarius</span>
+</div></a>
+<a href="/emoji/capricorn.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♑</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Capricorn</span>
+</div></a>
+<a href="/emoji/aquarius.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♒</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Aquarius</span>
+</div></a>
+<a href="/emoji/pisces.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♓</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Pisces</span>
+</div></a>
+<a href="/emoji/right-arrow.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">➡️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Right Arrow</span>
+</div></a>
+<a href="/emoji/left-arrow.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⬅️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Left Arrow</span>
+</div></a>
+<a href="/emoji/up-arrow.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⬆️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Up Arrow</span>
+</div></a>
+<a href="/emoji/down-arrow.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">⬇️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Down Arrow</span>
+</div></a>
+<a href="/emoji/right-arrow-curving-left.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">↩️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Right Arrow Curving Left</span>
+</div></a>
+<a href="/emoji/counterclockwise-arrows.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🔄</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Counterclockwise Arrows Button</span>
+</div></a>
+<a href="/emoji/clockwise-vertical-arrows.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🔃</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Clockwise Vertical Arrows</span>
+</div></a>
+<a href="/emoji/plus.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">➕</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Plus</span>
+</div></a>
+<a href="/emoji/minus.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">➖</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Minus</span>
+</div></a>
+<a href="/emoji/multiply.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">✖️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Multiply</span>
+</div></a>
+<a href="/emoji/divide.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">➗</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Divide</span>
+</div></a>
+<a href="/emoji/infinity.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">♾️</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Infinity</span>
+</div></a>
+<a href="/emoji/chequered-flag.html" class="block">
+<div class="border border-gray-200 rounded-lg p-3 flex flex-col items-center gap-1.5 hover:shadow-md transition-shadow cursor-pointer">
+<span class="text-3xl sm:text-4xl leading-none">🏁</span>
+<span class="text-xs text-gray-500 truncate block text-center w-full">Chequered Flag</span>
+</div></a>
+</div>
+</section>
+
+<section class="mt-12 border-t border-gray-200 pt-8">
+<h2 class="text-lg font-semibold mb-4">Popular Emoji Pages</h2>
+<div class="flex flex-wrap gap-2"><a href="/page/heart-emoji-50-times.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">heart emoji 50 times</a>
+<a href="/page/fire-emoji-200-times.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">fire emoji 200 times</a>
+<a href="/page/skull-emoji-10-times.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">skull emoji 10 times</a>
+<a href="/page/sad-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">sad emoji</a>
+<a href="/page/heart-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">heart emoji</a>
+<a href="/page/laugh-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">laugh emoji</a>
+<a href="/page/cry-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">cry emoji</a>
+<a href="/page/party-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">party emoji</a>
+<a href="/page/kiss-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">kiss emoji</a>
+<a href="/page/star-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">star emoji</a>
+<a href="/page/sun-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">sun emoji</a>
+<a href="/page/rainbow-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">rainbow emoji</a>
+<a href="/page/sparkle-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">sparkle emoji</a>
+<a href="/page/peace-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">peace emoji</a>
+<a href="/page/point-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">point emoji</a>
+<a href="/page/ok-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">ok emoji</a>
+<a href="/page/ghost-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">ghost emoji</a>
+<a href="/page/cat-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">cat emoji</a>
+<a href="/page/grinning-face-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">grinning face emoji</a>
+<a href="/page/grinning-face-with-big-eyes-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">grinning face with big eyes emoji</a>
+<a href="/page/grinning-face-with-smiling-eyes-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">grinning face with smiling eyes emoji</a>
+<a href="/page/christmas-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">christmas emoji</a>
+<a href="/page/birthday-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">birthday emoji</a>
+<a href="/page/cake-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">cake emoji</a>
+<a href="/page/music-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">music emoji</a>
+<a href="/page/car-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">car emoji</a>
+<a href="/page/money-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">money emoji</a>
+<a href="/page/crown-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">crown emoji</a>
+<a href="/page/phone-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">phone emoji</a>
+<a href="/page/pen-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">pen emoji</a>
+<a href="/page/key-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">key emoji</a>
+<a href="/page/beaming-face-with-smiling-eyes-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">beaming face with smiling eyes emoji</a>
+<a href="/page/grinning-squinting-face-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">grinning squinting face emoji</a>
+<a href="/page/grinning-face-with-sweat-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">grinning face with sweat emoji</a>
+<a href="/page/red-circle-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">red circle emoji</a>
+<a href="/page/smiling-face-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">smiling face emoji</a>
+<a href="/page/nerd-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">nerd emoji</a>
+<a href="/page/monkey-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">monkey emoji</a>
+<a href="/page/dolphin-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">dolphin emoji</a>
+<a href="/page/tree-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">tree emoji</a>
+<a href="/page/rolling-on-the-floor-laughing-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">rolling on the floor laughing emoji</a>
+<a href="/page/watermelon-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">watermelon emoji</a>
+<a href="/page/eyes-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">eyes emoji</a>
+<a href="/page/tongue-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">tongue emoji</a>
+<a href="/page/ear-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">ear emoji</a>
+<a href="/page/man-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">man emoji</a>
+<a href="/page/running-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">running emoji</a>
+<a href="/page/magic-wand-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">magic wand emoji</a>
+<a href="/page/mending-heart-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">mending heart emoji</a>
+<a href="/page/art-emoji.html" class="inline-block px-2 py-1 text-xs border border-gray-200 rounded-md hover:bg-gray-50 transition-colors">art emoji</a></div>
+</section>
+</main>
+<footer class="border-t border-gray-200 py-6 mt-8">
+<div class="max-w-6xl mx-auto px-4 text-center text-sm text-gray-500">
+<a href="/" class="hover:text-gray-900 transition-colors">Back to all emojis</a>
+<p class="mt-2">Click any emoji to copy it to your clipboard. Free emoji copy and paste tool.</p>
+</div>
+</footer>
+<div id="toast" class="toast"></div>
+<script>
+function copyText(t){navigator.clipboard.writeText(t).then(()=>{var e=document.getElementById('toast');e.textContent=t+' Copied!';e.classList.add('show');setTimeout(()=>e.classList.remove('show'),1500)}).catch(()=>alert('Copy failed'))}
+</script>
+</body>
+</html>
